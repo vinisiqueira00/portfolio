@@ -1,0 +1,117 @@
+{
+  "Header": {
+    "menu-item-initial": "Trabalho",
+    "menu-item-about": "Sobre",
+    "menu-item-cv": "Currículo"
+  },
+  "Footer": {
+    "text-contact": "Vamos entrar em contato",
+    "text-copyright": "Feito com zelo © 2024 Vinícius de Oliveira Siqueira"
+  },
+  "Home": {
+    "Presentation": {
+      "text-animated-01": "Clique nesse texto",
+      "text-animated-02": "Eu curto batalha de RAP",
+      "text-animated-03": "Sou um entusiasta de carro",
+      "name": "Olá, eu sou o Vini",
+      "occupation-before": "Um",
+      "occupation-content": "Desenvolvedor front-end",
+      "occupation-after": "com uma paixão por UI design e tecnologia",
+      "occupation-current-label": "Desenvolvedor front-end sênior na",
+      "occupation-current-value": "Cadastra",
+      "occupation-previous-label-01": "Trabalhei enteriormente na",
+      "occupation-previous-value-01": "Friweb",
+      "occupation-previous-label-02": "e",
+      "occupation-previous-value-02": "M3 Ecommerce",
+      "occupation-study-label": "Formado pelo",
+      "occupation-study-value": "Cefet/RJ"
+    },
+    "Projects": {
+      "title-section": "Projetos selecionados",
+      "project-01": {
+        "title": "CryptoRSA",
+        "subtitle": "projeto acadêmico",
+        "description": "Neste projeto, o objetivo era criar um \"programa\" que criptografasse e descriptografasse uma mensagem usando criptografia RSA. E juntamente, eu criei uma UI covidativa.",
+        "highlight": "Em produção",
+        "tag-01": "Responsivo",
+        "tag-02": "Web",
+        "tag-03": "Full-stack",
+        "button": "Saiba mais"
+      },
+      "text-ending": "Em breve, mais projetos documentados aqui"
+    }
+  },
+  "About": {
+    "text-disclaimer": "Sobre mim :)",
+    "text-title-before": "Vamos falar um pouco sobre",
+    "text-title-content": "quem é o Vini",
+    "paragraphs": {
+      "01-before": "Meu nome é Vinícius Siqueira, tenho 24 anos e sou",
+      "01-content": "desenvolvedor front-end sênior",
+      "01-after": ".",
+      "02": "Atuo na área de desenvolvimento desde o início de 2018, com quase 7 anos de experiência, e recentemente concluí minha graduação em Sistemas de Informação.",
+      "03": "Ao longo da minha carreira, ocupei diversos cargos como líder de squad, designer, desenvolvedor front-end e desenvolvedor full-stack. Já fiz parte de times ágeis, alguns usando Scrum, outros usando apenas Kanban.",
+      "04": "Hoje, tenho experiência trabalhando com grandes players do Brasil, como Carrefour Brasil e RiHappy, além de experiência em projetos LATAM (Argentina, Chile, Colômbia).",
+      "05": "Fora da minha vida profissional, sou casado há um ano com a mulher mais incrível do mundo - o nome dela é Amanda - e moramos no interior do Rio de Janeiro (Brasil), em uma cidade tranquila chamada Nova Friburgo.",
+      "06": "Algumas das minhas paixões e interesses incluem o mundo automotivo - sou um apaixonado por carros - e gosto de rap e batalhas de freestyle.",
+      "07": "Aqui vai um fato aleatório e divertido sobre mim."
+    },
+    "title-skills-section": "Ferramentas e hard skills",
+    "skills": {
+      "first": {
+        "group-title": "Principais",
+        "tag-01": {
+          "bolder": "NodeJS",
+          "normal": "(NestJS & ExpressJS)"
+        },
+        "tag-02": {
+          "bolder": "ReactJS",
+          "normal": "(NextJS)"
+        },
+        "tag-03": {
+          "bolder": "JavaScript & TypeScript",
+          "normal": ""
+        },
+        "tag-04": {
+          "bolder": "HTML & CSS",
+          "normal": ""
+        }
+      },
+      "second": {
+        "group-title": "Outros",
+        "tag-01": {
+          "bolder": "JavaScript",
+          "normal": "(JQuery & Vanilla)"
+        },
+        "tag-02": {
+          "bolder": "Tailwind & Sass",
+          "normal": "(NextJS)"
+        },
+        "tag-03": {
+          "bolder": "Queues",
+          "normal": "(Bull & RabittMQ)"
+        },
+        "tag-04": {
+          "bolder": "Storage",
+          "normal": "(Redis)"
+        },
+        "tag-05": {
+          "bolder": "APIs",
+          "normal": "(RESTfull & GraphQL)"
+        },
+        "tag-06": {
+          "bolder": "DB",
+          "normal": "(Postgres/MySQL & Mongo)"
+        },
+        "tag-07": {
+          "bolder": "Agile",
+          "normal": "(Scrum & Kanban)"
+        },
+        "tag-08": {
+          "bolder": "Design",
+          "normal": "(Figma & Básico de UI/UX)"
+        }
+      }
+    }
+  }
+}
