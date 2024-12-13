@@ -86,7 +86,7 @@ export default function Projects() {
               </div>
               <div className="flex items-center justify-start h-full">
                 <Link
-                  href="/"
+                  href="https://cryptorsa.vinisiqueira.com.br"
                   className="flex items-center justify-start gap-1 font-semibold text-base text-text-02 dark:text-text-07 leading-none"
                 >
                   {t("project-01.button")}{" "}
