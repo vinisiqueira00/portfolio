@@ -6,7 +6,9 @@
   },
   "Footer": {
     "text-contact": "Vamos entrar em contato",
-    "text-copyright": "Feito com zelo © 2024 Vinícius de Oliveira Siqueira"
+    "text-copyright": "Feito com zelo © 2024 Vinícius de Oliveira Siqueira",
+    "data-phone": "+55 22 99274-3135",
+    "data-email": "vinicius.siqueira642@gmail.com"
   },
   "Home": {
     "Presentation": {

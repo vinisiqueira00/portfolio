@@ -5,8 +5,8 @@ import "../globals.css";
 
 import Providers from "@/app/providers";
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import { Footer } from "@/components/molecules/Footer";
+import { Header } from "@/components/molecules/Header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,7 +35,7 @@ export default async function LocaleLayout({
         className={`${inter.className} antialiased bg-background-03 dark:bg-background-02`}
       >
         <Providers locale={locale}>
-          <Header locale={locale} />
+          <Header />
 
           {children}
 

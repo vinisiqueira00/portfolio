@@ -1,9 +1,9 @@
 import { defineRouting } from "next-intl/routing";
 import { createNavigation } from "next-intl/navigation";
-import { LANGUAGES } from "@/utils/constrants";
+
+import { LANGUAGES } from "@/utils/constants";
 
 export const routing = defineRouting({
-  // A list of all locales that are supported
   locales: LANGUAGES.LOCALES,
 
   // Used when no locale matches

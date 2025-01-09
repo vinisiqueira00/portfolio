@@ -1,11 +1,11 @@
-import Welcome from "@/components/Welcome";
-import Projects from "@/components/Projects";
+import { PersonalPresentation } from "@/components/organisms/PersonalPresentation";
+import { ProjectList } from "@/components/templates/ProjectList";
 
 export default function Home() {
   return (
     <main>
-      <Welcome />
-      <Projects />
+      <PersonalPresentation />
+      <ProjectList />
     </main>
   );
 }
