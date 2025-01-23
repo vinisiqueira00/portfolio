@@ -6,8 +6,6 @@ import "./globals.css";
 
 import Providers from "@/app/providers";
 
-// import { redirect, routing } from "@/i18n/routing";
-
 import { Header } from "@/components/molecules/Header";
 import { Footer } from "@/components/molecules/Footer";
 
@@ -26,26 +24,8 @@ interface LocaleLayoutProps {
   params: Promise<{ locale: string }>;
 }
 
-export default async function LocaleLayout({
-  // params,
-  children,
-}: LocaleLayoutProps) {
+export default async function LocaleLayout({ children }: LocaleLayoutProps) {
   const locale = await getLocale();
-
-  console.log("#TESTE_1", locale);
-
-  // const localeParam = (await params).locale;
-
-  // const isLocaleValid = localeParam && routing.locales.includes(localeParam);
-
-  // const locale = isLocaleValid ? localeParam : routing.defaultLocale;
-
-  // console.log("#TESTE_1", !isLocaleValid, localeParam, locale);
-
-  // if (!isLocaleValid) {
-  // return <></>;
-  // return redirect({ href: `/${localeParam ?? ""}`, locale });
-  // }
 
   return (
     <html lang={locale} suppressHydrationWarning>

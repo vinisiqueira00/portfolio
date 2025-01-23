@@ -19,7 +19,7 @@ function CopyToClipboard({ text }: CopyToClipboardProps) {
 
   return (
     <button
-      className="flex items-center justify-end gap-2"
+      className="flex flex-row-reverse items-center justify-end gap-2 md:flex-row"
       onClick={() => copy(text)}
     >
       <span className="font-medium text-base text-text-02 dark:text-text-07 text-right">

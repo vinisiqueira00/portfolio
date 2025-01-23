@@ -6,7 +6,7 @@ function ProfilePresentation() {
   const t = useTranslations("About");
 
   return (
-    <div className="flex items-start justify-center w-full h-auto gap-16">
+    <div className="flex flex-col items-center justify-center w-full h-auto gap-16 lg:flex-row lg:items-start">
       <ProfileImage src={t("image-url")} />
       <ProfileHistory />
     </div>

@@ -7,7 +7,7 @@ function ProfileSkillsPrincipalSection() {
   const t = useTranslations("About");
 
   return (
-    <div className="flex items-start justify-start gap-2">
+    <div className="flex flex-col items-start justify-start gap-2 md:flex-row">
       <ProfileSkillsSubtitle text={t("skills.first.group-title")} />
       <ProfileSkillsPrincipalFlags />
     </div>

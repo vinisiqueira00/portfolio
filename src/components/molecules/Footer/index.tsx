@@ -10,8 +10,8 @@ function Footer() {
 
   return (
     <footer className="flex items-center justify-center pt-24 pb-4">
-      <div className="flex items-stretch justify-between w-full max-w-5xl">
-        <div className="flex flex-col items-start justify-between">
+      <div className="flex flex-col items-stretch justify-between w-full max-w-5xl px-6 md:flex-row gap-6 md:gap-0">
+        <div className="flex flex-col items-start justify-between gap-4 md:gap-0">
           <FooterCTA text={t("text-contact")} />
 
           <div className="flex items-center justify-start gap-4">
@@ -33,8 +33,8 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-end justify-end gap-4">
-          <div className="flex flex-col items-end justify-end gap-1">
+        <div className="flex flex-col items-start justify-end gap-5 md:items-end md:gap-4">
+          <div className="flex flex-col items-start justify-end gap-1 md:items-end">
             <CopyToClipboard text={t("data-phone")} />
             <CopyToClipboard text={t("data-email")} />
           </div>

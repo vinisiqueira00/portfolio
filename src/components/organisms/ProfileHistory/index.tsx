@@ -3,7 +3,7 @@ import { ProfileHistoryHeader } from "@/components/molecules/ProfileHistoryHeade
 
 function ProfileHistory() {
   return (
-    <div className="flex-1 flex flex-col items-stretch justify-start gap-16 w-auto h-auto">
+    <div className="flex-1 flex flex-col items-stretch justify-start gap-12 md:gap-16 w-auto h-auto">
       <ProfileHistoryHeader />
       <ProfileHistoryTexts />
     </div>
