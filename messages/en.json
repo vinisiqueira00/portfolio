@@ -115,5 +115,13 @@
         }
       }
     }
+  },
+  "Not-Found": {
+    "title": "Page not found",
+    "subtitle": "Oops! The page you are looking for was not found.",
+    "description-01": "This could be due to 2 main reasons:",
+    "description-02": "The URL has been removed;",
+    "description-03": "Or the URL never existed.",
+    "button-text": "Back to home page"
   }
 }

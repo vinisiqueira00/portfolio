@@ -49,28 +49,26 @@ function ProjectList() {
   ];
 
   return (
-    <section className="flex items-center justify-center">
-      <div className="flex flex-col items-stretch justify-center w-full max-w-5xl gap-8">
-        <ProjectsTitleSection text={t("title-section")} />
+    <>
+      <ProjectsTitleSection text={t("title-section")} />
 
-        <div className="flex flex-col items-stretch justify-start gap-8">
-          {projectsData.map((project) => (
-            <ProjectContent
-              key={project.name}
-              thumbs={project.thumbs}
-              status={project.status}
-              name={project.name}
-              subTitle={project.subTitle}
-              description={project.description}
-              tags={project.tags}
-              link={project.link}
-            />
-          ))}
+      <div className="flex flex-col items-stretch justify-start gap-8">
+        {projectsData.map((project) => (
+          <ProjectContent
+            key={project.name}
+            thumbs={project.thumbs}
+            status={project.status}
+            name={project.name}
+            subTitle={project.subTitle}
+            description={project.description}
+            tags={project.tags}
+            link={project.link}
+          />
+        ))}
 
-          <ProjectsDisclaimer text={t("text-ending")} />
-        </div>
+        <ProjectsDisclaimer text={t("text-ending")} />
       </div>
-    </section>
+    </>
   );
 }
 

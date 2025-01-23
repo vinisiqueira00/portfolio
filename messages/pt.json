@@ -115,5 +115,13 @@
         }
       }
     }
+  },
+  "Not-Found": {
+    "title": "Página não encontrada",
+    "subtitle": "Oops! A página que você está buscando não foi encontrada.",
+    "description-01": "Isso pode ter ocorrido por 2 motivos principais:",
+    "description-02": "A URL foi removida;",
+    "description-03": "Ou a URL nunca existiu.",
+    "button-text": "Voltar para o início"
   }
 }
