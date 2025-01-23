@@ -1,8 +1,10 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-import { Link, usePathname } from "@/i18n/routing";
+// import { Link, usePathname } from "@/i18n/routing";
 
 interface MenuLinkProps {
   href: string;

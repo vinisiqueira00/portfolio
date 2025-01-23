@@ -50,7 +50,7 @@ function ProjectList() {
 
   return (
     <section className="flex items-center justify-center">
-      <div className="flex flex-col items-stretch justify-center max-w-5xl gap-8">
+      <div className="flex flex-col items-stretch justify-center w-full max-w-5xl gap-8">
         <ProjectsTitleSection text={t("title-section")} />
 
         <div className="flex flex-col items-stretch justify-start gap-8">

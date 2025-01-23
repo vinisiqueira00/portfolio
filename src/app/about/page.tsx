@@ -8,15 +8,7 @@ export default function About() {
     <main className="flex items-center justify-center pt-24">
       <div className="flex flex-col items-stretch justify-start gap-16 max-w-5xl">
         <div className="flex items-start justify-center w-full h-auto gap-16">
-          <div className="relative flex items-center justify-center w-[388px] h-[708px] before:content-[''] before:absolute before:top-6 before:left-6 before:w-full before:h-full before:bg-background-01 dark:before:bg-background-08 before:rounded-2xl before:z-0">
-            <Image
-              className="rounded-2xl z-10"
-              src="/images/me.png"
-              alt="Personal Picture"
-              width={388}
-              height={708}
-            />
-          </div>
+          <ProfileImage src="/images/me.png" />
 
           <div className="flex-1 flex flex-col items-stretch justify-start gap-16 w-auto h-auto">
             <div className="flex flex-col items-stretch justify-start gap-2">
@@ -157,5 +149,23 @@ export default function About() {
         </div>
       </div>
     </main>
+  );
+}
+
+interface ProfileImageProps {
+  src: string;
+}
+
+function ProfileImage({ src }: ProfileImageProps) {
+  return (
+    <div className="relative flex items-center justify-center w-[388px] h-[708px] before:content-[''] before:absolute before:top-6 before:left-6 before:w-full before:h-full before:bg-background-01 dark:before:bg-background-08 before:rounded-2xl before:z-0">
+      <Image
+        className="rounded-2xl z-10"
+        src={src}
+        alt="Personal Picture"
+        width={388}
+        height={708}
+      />
+    </div>
   );
 }

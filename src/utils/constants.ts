@@ -1,3 +1,4 @@
-export const LANGUAGES = {
-  LOCALES: ["pt", "en"],
-};
+// export const LANGUAGES = {
+//   LOCALES: ["pt", "en"],
+//   DEFAULT_LOCALE: "pt",
+// };

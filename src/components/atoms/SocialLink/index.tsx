@@ -1,6 +1,7 @@
+import Link from "next/link";
 import Image from "next/image";
 
-import { Link } from "@/i18n/routing";
+// import { Link } from "@/i18n/routing";
 
 interface SocialLinkProps {
   href: string;
