@@ -12,6 +12,16 @@
   },
   "Home": {
     "Presentation": {
+      "avatar-url": {
+        "initial": {
+          "dark": "/images/avatar-02a.png",
+          "light": "/images/avatar-01a.png"
+        },
+        "animated": {
+          "dark": "/images/avatar-02b.png",
+          "light": "/images/avatar-01b.png"
+        }
+      },
       "text-animated-01": "Click this text",
       "text-animated-02": "I enjoy rap battle",
       "text-animated-03": "I'm a car enthusiast",
@@ -44,6 +54,7 @@
     }
   },
   "About": {
+    "image-url": "/images/me.png",
     "text-disclaimer": "About me :)",
     "text-title-before": "Let's talk a little about",
     "text-title-content": "who Vini is",

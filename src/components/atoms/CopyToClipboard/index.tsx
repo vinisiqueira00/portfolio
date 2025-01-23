@@ -1,14 +1,20 @@
 "use client";
 
-import { Copy } from "lucide-react";
+import { Copy, BadgeCheck } from "lucide-react";
+import { useState } from "react";
 
 interface CopyToClipboardProps {
   text: string;
 }
 
 function CopyToClipboard({ text }: CopyToClipboardProps) {
+  const [copied, setCopied] = useState<boolean>(false);
+
   function copy(text: string) {
     navigator.clipboard.writeText(text);
+
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   }
 
   return (
@@ -19,11 +25,19 @@ function CopyToClipboard({ text }: CopyToClipboardProps) {
       <span className="font-medium text-base text-text-02 dark:text-text-07 text-right">
         {text}
       </span>
-      <Copy
-        className="text-text-02 dark:text-text-07"
-        size={16}
-        strokeWidth={2}
-      />
+      {copied ? (
+        <BadgeCheck
+          className="text-text-02 dark:text-text-07"
+          size={16}
+          strokeWidth={2}
+        />
+      ) : (
+        <Copy
+          className="text-text-02 dark:text-text-07"
+          size={16}
+          strokeWidth={2}
+        />
+      )}
     </button>
   );
 }

@@ -25,22 +25,22 @@ function AvatarAnimation() {
     {
       text: t("text-animated-01"),
       avatar: {
-        light: "/images/avatar-01a.png",
-        dark: "/images/avatar-02a.png",
+        light: t("avatar-url.initial.light"),
+        dark: t("avatar-url.initial.dark"),
       },
     },
     {
       text: t("text-animated-02"),
       avatar: {
-        light: "/images/avatar-01b.png",
-        dark: "/images/avatar-02b.png",
+        light: t("avatar-url.animated.light"),
+        dark: t("avatar-url.animated.dark"),
       },
     },
     {
       text: t("text-animated-03"),
       avatar: {
-        light: "/images/avatar-01b.png",
-        dark: "/images/avatar-02b.png",
+        light: t("avatar-url.animated.light"),
+        dark: t("avatar-url.animated.dark"),
       },
     },
   ];
