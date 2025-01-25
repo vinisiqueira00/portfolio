@@ -24,7 +24,7 @@ function ProjectStatus(props: ProjectStatusProps) {
   return (
     <div
       data-status={props.status}
-      className="flex items-center justify-center gap-2 h-7 px-3 dark:bg-background-11 rounded-full data-[status=FINISHED]:bg-background-05 data-[status=IN_EXECUTION]:bg-background-07 dark:data-[status=IN_EXECUTION]:bg-background-12"
+      className="flex items-center justify-center gap-2 h-6 px-2 dark:bg-background-11 rounded-full data-[status=FINISHED]:bg-background-05 data-[status=IN_EXECUTION]:bg-background-07 dark:data-[status=IN_EXECUTION]:bg-background-12 md:h-7 md:px-3"
     >
       <i
         data-status={props.status}
@@ -32,7 +32,7 @@ function ProjectStatus(props: ProjectStatusProps) {
       />
       <span
         data-status={props.status}
-        className="font-medium text-base text-text-02 leading-none data-[status=FINISHED]:dark:text-text-03"
+        className="font-semibold text-xs text-text-02 leading-none data-[status=FINISHED]:dark:text-text-03 md:font-medium md:text-base"
       >
         {props.text}
       </span>

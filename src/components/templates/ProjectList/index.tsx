@@ -49,7 +49,7 @@ function ProjectList() {
   ];
 
   return (
-    <>
+    <div className="flex flex-col items-stretch justify-center w-full max-w-5xl gap-8 px-6">
       <ProjectsTitleSection text={t("title-section")} />
 
       <div className="flex flex-col items-stretch justify-start gap-8">
@@ -68,7 +68,7 @@ function ProjectList() {
 
         <ProjectsDisclaimer text={t("text-ending")} />
       </div>
-    </>
+    </div>
   );
 }
 

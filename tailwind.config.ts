@@ -31,6 +31,7 @@ export default {
         "background-10": "#333333",
         "background-11": "#122A18",
         "background-12": "#2C2114",
+        "background-13": "#1A1A1A",
       },
       backgroundImage: {
         "background-gradient-01": "linear-gradient(to right, #FF61AD, #FF9736)",

@@ -19,7 +19,7 @@ interface ProjectContentProps {
 
 function ProjectContent(props: ProjectContentProps) {
   return (
-    <div className="flex items-stretch justify-center gap-12">
+    <div className="grid grid-cols-1 grid-rows-[auto] gap-4 border border-background-01 dark:border-background-13 p-4 rounded-lg md:p-0 box-border md:border-0 md:gap-12 md:grid-cols-2 md:grid-rows-1">
       <ProjectThumbs
         urlKey={props.thumbs.urlKey}
         altKey={props.thumbs.altKey}

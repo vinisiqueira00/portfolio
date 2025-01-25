@@ -11,7 +11,7 @@ export default function NotFoundPage() {
 
   return (
     <section className="flex-1 flex items-center justify-center">
-      <div className="flex flex-col items-start justify-center w-full max-w-5xl gap-8">
+      <div className="flex flex-col items-start justify-center w-full max-w-5xl gap-8 px-6">
         <ErrorPageCode />
         <ErrorPageTexts />
         <ErrorPageButton href="/" text={buttonText} />
