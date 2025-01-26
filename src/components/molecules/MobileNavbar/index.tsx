@@ -27,7 +27,7 @@ function MobileNavbar() {
         className="fixed top-0 left-0 w-screen h-screen bg-background-03 dark:bg-background-02 opacity-0 pointer-events-none group-data-[opened=true]:opacity-80 group-data-[opened=true]:pointer-events-auto backdrop-blur-md transition-all"
       />
 
-      <div className="fixed top-0 -left-full flex flex-col items-stretch justify-start gap-8 w-5/6 h-screen px-6 py-10 bg-background-03 dark:bg-background-02 group-data-[opened=true]:left-0 transition-all">
+      <div className="fixed top-0 -left-full flex flex-col items-stretch justify-start gap-8 w-5/6 h-screen px-4 py-10 bg-background-03 dark:bg-background-02 group-data-[opened=true]:left-0 transition-all">
         <div className="flex items-center justify-between">
           <Logotype />
           <button onClick={() => close()}>

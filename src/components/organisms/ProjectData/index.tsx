@@ -1,4 +1,3 @@
-import { ProjectTags } from "@/components/molecules/ProjectTags";
 import { ProjectFooter } from "@/components/molecules/ProjectFooter";
 import { ProjectHeader } from "@/components/molecules/ProjectHeader";
 import { ProjectDescription } from "@/components/atoms/ProjectDescription";
@@ -17,7 +16,7 @@ interface ProjectDataProps {
 
 function ProjectData(props: ProjectDataProps) {
   return (
-    <div className="flex-1 flex flex-col items-stretch justify-start gap-4 py-0 md:py-4">
+    <div className="flex-1 flex flex-col items-stretch justify-start gap-3 md:gap-4 py-0 md:py-4">
       <ProjectHeader
         status={props.status}
         name={props.name}
@@ -25,14 +24,6 @@ function ProjectData(props: ProjectDataProps) {
       />
 
       <ProjectDescription text={props.description} />
-
-      <ProjectTags
-        highlight={{
-          text: props.tags.highlight,
-          status: props.status,
-        }}
-        tags={props.tags.others}
-      />
 
       <ProjectFooter href={props.link.href} text={props.link.text} />
     </div>

@@ -4,7 +4,7 @@ interface FooterCTAProps {
 
 function FooterCTA({ text }: FooterCTAProps) {
   return (
-    <h5 className="bg-background-gradient-01 inline-block font-bold text-3xl text-transparent bg-clip-text">
+    <h5 className="bg-background-gradient-01 inline-block font-bold text-2xl md:text-3xl text-transparent bg-clip-text">
       {text}
     </h5>
   );

@@ -7,6 +7,7 @@ interface OccupationPreviousProps {
   texts: {
     label: string;
     value: string;
+    href: string;
   }[];
 }
 
@@ -17,7 +18,7 @@ function OccupationPrevious({ texts }: OccupationPreviousProps) {
         <span key={text.value}>
           {text.label}{" "}
           <Link
-            href="https://www.friweb.com.br/"
+            href={text.href}
             target="_blank"
             className="inline-flex items-center justify-center text-text-02 dark:text-text-07 font-medium"
           >

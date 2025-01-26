@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <header className="flex items-center justify-center w-full pt-10">
-      <div className="flex items-center justify-between w-full max-w-7xl gap-4 px-6">
+      <div className="flex items-center justify-between w-full max-w-7xl gap-4 px-4">
         <button onClick={open}>
           <List
             className="text-text-02 md:hidden dark:text-text-07"

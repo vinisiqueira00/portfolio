@@ -1,5 +1,5 @@
 import { ProjectName } from "@/components/atoms/ProjectName";
-import { ProjectStatus } from "@/components/atoms/ProjectStatus";
+// import { ProjectStatus } from "@/components/atoms/ProjectStatus";
 import { ProjectSubTitle } from "@/components/atoms/ProjectSubTitle";
 
 interface ProjectHeaderProps {
@@ -8,10 +8,10 @@ interface ProjectHeaderProps {
   subTitle: string;
 }
 
-function ProjectHeader({ status, name, subTitle }: ProjectHeaderProps) {
+function ProjectHeader({ name, subTitle }: ProjectHeaderProps) {
   return (
     <div className="flex items-center justify-start gap-2">
-      <ProjectStatus smaller status={status} />
+      {/* <ProjectStatus smaller status={status} /> */}
       <ProjectName text={name} />
       <ProjectSubTitle text={subTitle} />
     </div>

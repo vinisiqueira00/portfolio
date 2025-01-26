@@ -4,7 +4,7 @@ interface ProfileDisclaimerProps {
 
 function ProfileDisclaimer({ text }: ProfileDisclaimerProps) {
   return (
-    <span className="font-bold text-2xl text-left text-text-01 dark:text-text-08">
+    <span className="font-bold text-xl md:text-2xl text-left text-text-01 dark:text-text-08">
       {text}
     </span>
   );

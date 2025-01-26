@@ -6,7 +6,7 @@ import Link from "next/link";
 function Logotype() {
   return (
     <Link href="/" className="flex items-center justify-start">
-      <h2 className="font-semibold text-2xl text-text-02 dark:text-text-07">
+      <h2 className="font-semibold text-xl text-text-02 dark:text-text-07 md:text-2xl">
         Vini Siqueira
       </h2>
     </Link>

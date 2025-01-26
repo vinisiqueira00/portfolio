@@ -7,7 +7,7 @@ interface ProjectThumbsProps {
 
 function ProjectThumbs({ urlKey, altKey }: ProjectThumbsProps) {
   return (
-    <div className="grid grid-cols-4 grid-rows-1 gap-2 bg-transparent p-0 md:rounded-2xl md:p-8 md:bg-background-01 md:dark:bg-background-08">
+    <div className="grid grid-cols-4 grid-rows-1 gap-2 rounded-xl p-8 bg-background-01 dark:bg-background-08">
       <div className="relative flex items-center justify-center w-full h-auto aspect-[1/2.15] m-auto">
         <Image
           className="rounded shadow-shadow-02 aspect-auto object-cover"

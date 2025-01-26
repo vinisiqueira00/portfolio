@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 
 import { ProjectContent } from "@/components/templates/ProjectContent";
-import { ProjectsDisclaimer } from "@/components/atoms/ProjectsDisclaimer";
 import { ProjectsTitleSection } from "@/components/atoms/ProjectsTitleSection";
 
 interface IProject {
@@ -49,7 +48,7 @@ function ProjectList() {
   ];
 
   return (
-    <div className="flex flex-col items-stretch justify-center w-full max-w-5xl gap-8 px-6">
+    <div className="flex flex-col items-stretch justify-center w-full max-w-5xl gap-8 px-4">
       <ProjectsTitleSection text={t("projects-title-section")} />
 
       <div className="flex flex-col items-stretch justify-start gap-8">
@@ -65,8 +64,6 @@ function ProjectList() {
             link={project.link}
           />
         ))}
-
-        <ProjectsDisclaimer text={t("projects-text-ending")} />
       </div>
     </div>
   );

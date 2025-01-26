@@ -30,10 +30,12 @@ function PersonalOccupation() {
             {
               label: t("home-presentation-occupation-previous-label-01"),
               value: t("home-presentation-occupation-previous-value-01"),
+              href: t("home-presentation-occupation-previous-link-01"),
             },
             {
               label: t("home-presentation-occupation-previous-label-02"),
               value: t("home-presentation-occupation-previous-value-02"),
+              href: t("home-presentation-occupation-previous-link-02"),
             },
           ]}
         />
