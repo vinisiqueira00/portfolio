@@ -5,11 +5,11 @@ import { ProfileSkillsOtherSection } from "@/components/organisms/ProfileSkillsO
 import { ProfileSkillsPrincipalSection } from "@/components/organisms/ProfileSkillsPrincipalSection";
 
 function ProfileSkillsSection() {
-  const t = useTranslations("About");
+  const t = useTranslations();
 
   return (
     <div className="flex flex-col items-stretch justify-start gap-6">
-      <ProfileSkillsTitle text={t("title-skills-section")} />
+      <ProfileSkillsTitle text={t("about-title-skills-section")} />
       <ProfileSkillsPrincipalSection />
       <ProfileSkillsOtherSection />
     </div>

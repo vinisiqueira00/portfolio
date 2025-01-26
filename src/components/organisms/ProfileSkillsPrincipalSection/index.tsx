@@ -4,11 +4,11 @@ import { ProfileSkillsSubtitle } from "@/components/atoms/ProfileSkillsSubtitle"
 import { ProfileSkillsPrincipalFlags } from "@/components/molecules/ProfileSkillsPrincipalFlags";
 
 function ProfileSkillsPrincipalSection() {
-  const t = useTranslations("About");
+  const t = useTranslations();
 
   return (
     <div className="flex flex-col items-start justify-start gap-2 md:flex-row">
-      <ProfileSkillsSubtitle text={t("skills.first.group-title")} />
+      <ProfileSkillsSubtitle text={t("about-skills-first-group-title")} />
       <ProfileSkillsPrincipalFlags />
     </div>
   );

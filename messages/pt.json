@@ -1,138 +1,87 @@
 {
-  "Header": {
-    "menu-item-initial": "Trabalho",
-    "menu-item-about": "Sobre",
-    "menu-item-cv": "Currículo"
-  },
-  "Footer": {
-    "text-contact": "Vamos entrar em contato",
-    "text-copyright": "Feito com zelo © 2024 Vinícius de Oliveira Siqueira",
-    "data-phone": "+55 22 99274-3135",
-    "data-email": "vinicius.siqueira642@gmail.com"
-  },
-  "Home": {
-    "Presentation": {
-      "avatar-url": {
-        "initial": {
-          "dark": "/images/avatar-02a.png",
-          "light": "/images/avatar-01a.png"
-        },
-        "animated": {
-          "dark": "/images/avatar-02b.png",
-          "light": "/images/avatar-01b.png"
-        }
-      },
-      "text-animated-01": "Clique nesse texto",
-      "text-animated-02": "Eu curto batalha de RAP",
-      "text-animated-03": "Sou um entusiasta de carro",
-      "name": "Olá, eu sou o Vini",
-      "occupation-before": "Um",
-      "occupation-content": "Desenvolvedor front-end",
-      "occupation-after": "com uma paixão por UI design e tecnologia",
-      "occupation-current-label": "Desenvolvedor front-end sênior na",
-      "occupation-current-value": "Cadastra",
-      "occupation-previous-label-01": "Trabalhei enteriormente na",
-      "occupation-previous-value-01": "Friweb",
-      "occupation-previous-label-02": "e",
-      "occupation-previous-value-02": "M3 Ecommerce",
-      "occupation-study-label": "Formado pelo",
-      "occupation-study-value": "Cefet/RJ"
-    },
-    "Projects": {
-      "title-section": "Projetos selecionados",
-      "project-01": {
-        "title": "CryptoRSA",
-        "subtitle": "projeto acadêmico",
-        "description": "Neste projeto, o objetivo era criar um \"programa\" que criptografasse e descriptografasse uma mensagem usando criptografia RSA. E juntamente, eu criei uma UI covidativa.",
-        "highlight": "Em produção",
-        "tag-01": "Responsivo",
-        "tag-02": "Web",
-        "tag-03": "Full-stack",
-        "button": "Saiba mais"
-      },
-      "text-ending": "Em breve, mais projetos documentados aqui"
-    }
-  },
-  "About": {
-    "image-url": "/images/me.png",
-    "text-disclaimer": "Sobre mim :)",
-    "text-title-before": "Vamos falar um pouco sobre",
-    "text-title-content": "quem é o Vini",
-    "paragraphs": {
-      "01-before": "Meu nome é Vinícius Siqueira, tenho 24 anos e sou",
-      "01-content": "desenvolvedor front-end sênior",
-      "01-after": ".",
-      "02": "Atuo na área de desenvolvimento desde o início de 2018, com quase 7 anos de experiência, e recentemente concluí minha graduação em Sistemas de Informação.",
-      "03": "Ao longo da minha carreira, ocupei diversos cargos como líder de squad, designer, desenvolvedor front-end e desenvolvedor full-stack. Já fiz parte de times ágeis, alguns usando Scrum, outros usando apenas Kanban.",
-      "04": "Hoje, tenho experiência trabalhando com grandes players do Brasil, como Carrefour Brasil e RiHappy, além de experiência em projetos LATAM (Argentina, Chile, Colômbia).",
-      "05": "Fora da minha vida profissional, sou casado há um ano com a mulher mais incrível do mundo - o nome dela é Amanda - e moramos no interior do Rio de Janeiro (Brasil), em uma cidade tranquila chamada Nova Friburgo.",
-      "06": "Algumas das minhas paixões e interesses incluem o mundo automotivo - sou um apaixonado por carros - e gosto de rap e batalhas de freestyle.",
-      "07": "Aqui vai um fato aleatório e divertido sobre mim."
-    },
-    "title-skills-section": "Ferramentas e hard skills",
-    "skills": {
-      "first": {
-        "group-title": "Principais",
-        "tag-01": {
-          "bolder": "NodeJS",
-          "normal": "(NestJS & ExpressJS)"
-        },
-        "tag-02": {
-          "bolder": "ReactJS",
-          "normal": "(NextJS)"
-        },
-        "tag-03": {
-          "bolder": "JavaScript & TypeScript",
-          "normal": ""
-        },
-        "tag-04": {
-          "bolder": "HTML & CSS",
-          "normal": ""
-        }
-      },
-      "second": {
-        "group-title": "Outros",
-        "tag-01": {
-          "bolder": "JavaScript",
-          "normal": "(JQuery & Vanilla)"
-        },
-        "tag-02": {
-          "bolder": "Tailwind & Sass",
-          "normal": "(NextJS)"
-        },
-        "tag-03": {
-          "bolder": "Queues",
-          "normal": "(Bull & RabittMQ)"
-        },
-        "tag-04": {
-          "bolder": "Storage",
-          "normal": "(Redis)"
-        },
-        "tag-05": {
-          "bolder": "APIs",
-          "normal": "(RESTfull & GraphQL)"
-        },
-        "tag-06": {
-          "bolder": "DB",
-          "normal": "(Postgres/MySQL & Mongo)"
-        },
-        "tag-07": {
-          "bolder": "Agile",
-          "normal": "(Scrum & Kanban)"
-        },
-        "tag-08": {
-          "bolder": "Design",
-          "normal": "(Figma & Básico de UI/UX)"
-        }
-      }
-    }
-  },
-  "Not-Found": {
-    "title": "Página não encontrada",
-    "subtitle": "Oops! A página que você está buscando não foi encontrada.",
-    "description-01": "Isso pode ter ocorrido por 2 motivos principais:",
-    "description-02": "A URL foi removida;",
-    "description-03": "Ou a URL nunca existiu.",
-    "button-text": "Voltar para o início"
-  }
+  "general-data-phone": "+55 22 99274-3135",
+  "general-data-email": "vinicius.siqueira642@gmail.com",
+  "header-menu-item-01-label": "Inicio",
+  "header-menu-item-01-link": "/",
+  "header-menu-item-02-label": "Sobre",
+  "header-menu-item-02-link": "/about",
+  "header-menu-item-cv": "Currículo",
+  "footer-text-contact": "Vamos entrar em contato",
+  "footer-text-copyright": "Feito com zelo © 2024 Vinícius de Oliveira Siqueira",
+  "home-presentation-avatar-url-initial-dark": "/images/avatar-02a.png",
+  "home-presentation-avatar-url-initial-light": "/images/avatar-01a.png",
+  "home-presentation-avatar-url-animated-dark": "/images/avatar-02b.png",
+  "home-presentation-avatar-url-animated-light": "/images/avatar-01b.png",
+  "home-presentation-text-animated-01": "Clique nesse texto",
+  "home-presentation-text-animated-02": "Eu curto batalha de RAP",
+  "home-presentation-text-animated-03": "Sou um entusiasta de carro",
+  "home-presentation-name": "Olá, eu sou o Vini",
+  "home-presentation-occupation-before": "Um",
+  "home-presentation-occupation-content": "Desenvolvedor front-end",
+  "home-presentation-occupation-after": "com uma paixão por UI design e tecnologia",
+  "home-presentation-occupation-current-label": "Desenvolvedor front-end sênior na",
+  "home-presentation-occupation-current-value": "Cadastra",
+  "home-presentation-occupation-previous-label-01": "Trabalhei enteriormente na",
+  "home-presentation-occupation-previous-value-01": "Friweb",
+  "home-presentation-occupation-previous-label-02": "e",
+  "home-presentation-occupation-previous-value-02": "M3 Ecommerce",
+  "home-presentation-occupation-study-label": "Formado pelo",
+  "home-presentation-occupation-study-value": "Cefet/RJ",
+  "projects-title-section": "Projetos selecionados",
+  "projects-project-01-title": "CryptoRSA",
+  "projects-project-01-subtitle": "projeto acadêmico",
+  "projects-project-01-description": "Neste projeto, o objetivo era criar um \"programa\" que criptografasse e descriptografasse uma mensagem usando criptografia RSA. E juntamente, eu criei uma UI covidativa.",
+  "projects-project-01-highlight": "Em produção",
+  "projects-project-01-tag-01": "Responsivo",
+  "projects-project-01-tag-02": "Web",
+  "projects-project-01-tag-03": "Full-stack",
+  "projects-project-01-link": "https://cryptorsa.vinisiqueira.com.br",
+  "projects-project-01-button": "Saiba mais",
+  "projects-text-ending": "Em breve, mais projetos documentados aqui",
+  "about-image-url": "/images/me.png",
+  "about-text-disclaimer": "Sobre mim :)",
+  "about-text-title-before": "Vamos falar um pouco sobre",
+  "about-text-title-content": "quem é o Vini",
+  "about-paragraphs-01-before": "Meu nome é Vinícius Siqueira, tenho 24 anos e sou",
+  "about-paragraphs-01-content": "desenvolvedor front-end sênior",
+  "about-paragraphs-01-after": ".",
+  "about-paragraphs-02": "Atuo na área de desenvolvimento desde o início de 2018, com quase 7 anos de experiência, e recentemente concluí minha graduação em Sistemas de Informação.",
+  "about-paragraphs-03": "Ao longo da minha carreira, ocupei diversos cargos como líder de squad, designer, desenvolvedor front-end e desenvolvedor full-stack. Já fiz parte de times ágeis, alguns usando Scrum, outros usando apenas Kanban.",
+  "about-paragraphs-04": "Hoje, tenho experiência trabalhando com grandes players do Brasil, como Carrefour Brasil e RiHappy, além de experiência em projetos LATAM (Argentina, Chile, Colômbia).",
+  "about-paragraphs-05": "Fora da minha vida profissional, sou casado há um ano com a mulher mais incrível do mundo - o nome dela é Amanda - e moramos no interior do Rio de Janeiro (Brasil), em uma cidade tranquila chamada Nova Friburgo.",
+  "about-paragraphs-06": "Algumas das minhas paixões e interesses incluem o mundo automotivo - sou um apaixonado por carros - e gosto de rap e batalhas de freestyle.",
+  "about-paragraphs-07": "Aqui vai um fato aleatório e divertido sobre mim.",
+  "about-title-skills-section": "Ferramentas e hard skills",
+  "about-skills-first-group-title": "Principais",
+  "about-skills-first-tag-01-bolder": "NodeJS",
+  "about-skills-first-tag-01-normal": "(NestJS & ExpressJS)",
+  "about-skills-first-tag-02-bolder": "ReactJS",
+  "about-skills-first-tag-02-normal": "(NextJS)",
+  "about-skills-first-tag-03-bolder": "JavaScript & TypeScript",
+  "about-skills-first-tag-03-normal": "",
+  "about-skills-first-tag-04-bolder": "HTML & CSS",
+  "about-skills-first-tag-04-normal": "",
+  "about-skills-second-group-title": "Outros",
+  "about-skills-second-tag-01-bolder": "JavaScript",
+  "about-skills-second-tag-01-normal": "(JQuery & Vanilla)",
+  "about-skills-second-tag-02-bolder": "Tailwind & Sass",
+  "about-skills-second-tag-02-normal": "(NextJS)",
+  "about-skills-second-tag-03-bolder": "Queues",
+  "about-skills-second-tag-03-normal": "(Bull & RabittMQ)",
+  "about-skills-second-tag-04-bolder": "Storage",
+  "about-skills-second-tag-04-normal": "(Redis)",
+  "about-skills-second-tag-05-bolder": "APIs",
+  "about-skills-second-tag-05-normal": "(RESTfull & GraphQL)",
+  "about-skills-second-tag-06-bolder": "DB",
+  "about-skills-second-tag-06-normal": "(Postgres/MySQL & Mongo)",
+  "about-skills-second-tag-07-bolder": "Agile",
+  "about-skills-second-tag-07-normal": "(Scrum & Kanban)",
+  "about-skills-second-tag-08-bolder": "Design",
+  "about-skills-second-tag-08-normal": "(Figma & Básico de UI/UX)",
+  "not-found-title": "Página não encontrada",
+  "not-found-subtitle": "Oops! A página que você está buscando não foi encontrada.",
+  "not-found-description-01": "Isso pode ter ocorrido por 2 motivos principais:",
+  "not-found-description-02": "A URL foi removida;",
+  "not-found-description-03": "Ou a URL nunca existiu.",
+  "not-found-button-text": "Voltar para o início"
 }

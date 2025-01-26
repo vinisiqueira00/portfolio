@@ -9,7 +9,7 @@ function ThemeSwitcher() {
 
   return (
     <button
-      className="flex items-center justify-center gap-1"
+      className="flex items-center justify-center gap-1 py-2 md:p-0 rounded-lg border border-background-01 dark:border-background-13 md:border-0"
       onClick={() => {
         setTheme(resolvedTheme === "dark" ? "light" : "dark");
       }}

@@ -6,13 +6,13 @@ import { CopyToClipboard } from "@/components/atoms/CopyToClipboard";
 import { Copyright } from "@/components/atoms/Copyright";
 
 function Footer() {
-  const t = useTranslations("Footer");
+  const t = useTranslations("");
 
   return (
     <footer className="flex items-center justify-center pt-24 pb-4">
       <div className="flex flex-col items-stretch justify-between w-full max-w-5xl px-6 md:flex-row gap-6 md:gap-0">
         <div className="flex flex-col items-start justify-between gap-4 md:gap-0">
-          <FooterCTA text={t("text-contact")} />
+          <FooterCTA text={t("footer-text-contact")} />
 
           <div className="flex items-center justify-start gap-4">
             <SocialLink
@@ -35,11 +35,11 @@ function Footer() {
 
         <div className="flex flex-col items-start justify-end gap-5 md:items-end md:gap-4">
           <div className="flex flex-col items-start justify-end gap-1 md:items-end">
-            <CopyToClipboard text={t("data-phone")} />
-            <CopyToClipboard text={t("data-email")} />
+            <CopyToClipboard text={t("general-data-phone")} />
+            <CopyToClipboard text={t("general-data-email")} />
           </div>
 
-          <Copyright text={t("text-copyright")} />
+          <Copyright text={t("footer-text-copyright")} />
         </div>
       </div>
     </footer>

@@ -17,30 +17,30 @@ interface AvatarAnimationProps {
 }
 
 function AvatarAnimation() {
-  const t = useTranslations("Home.Presentation");
+  const t = useTranslations();
 
   const [clickAnimationId, setClickAnimationId] = useState<number>(0);
 
   const animationSteps: AvatarAnimationProps["animationSteps"] = [
     {
-      text: t("text-animated-01"),
+      text: t("home-presentation-text-animated-01"),
       avatar: {
-        light: t("avatar-url.initial.light"),
-        dark: t("avatar-url.initial.dark"),
+        light: t("home-presentation-avatar-url-initial-light"),
+        dark: t("home-presentation-avatar-url-initial-dark"),
       },
     },
     {
-      text: t("text-animated-02"),
+      text: t("home-presentation-text-animated-02"),
       avatar: {
-        light: t("avatar-url.animated.light"),
-        dark: t("avatar-url.animated.dark"),
+        light: t("home-presentation-avatar-url-animated-light"),
+        dark: t("home-presentation-avatar-url-animated-dark"),
       },
     },
     {
-      text: t("text-animated-03"),
+      text: t("home-presentation-text-animated-03"),
       avatar: {
-        light: t("avatar-url.animated.light"),
-        dark: t("avatar-url.animated.dark"),
+        light: t("home-presentation-avatar-url-animated-light"),
+        dark: t("home-presentation-avatar-url-animated-dark"),
       },
     },
   ];

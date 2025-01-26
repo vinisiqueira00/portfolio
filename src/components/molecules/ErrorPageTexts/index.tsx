@@ -6,18 +6,22 @@ import { ErrorPageSubtitle } from "@/components/atoms/ErrorPageSubtitle";
 import { ErrorPageDescription } from "@/components/atoms/ErrorPageDescription";
 
 function ErrorPageTexts() {
-  const t = useTranslations("Not-Found");
+  const t = useTranslations();
 
   const title: string = useMemo(() => {
-    return t("title");
+    return t("not-found-title");
   }, [t]);
 
   const subtitle: string = useMemo(() => {
-    return t("subtitle");
+    return t("not-found-subtitle");
   }, [t]);
 
   const descriptions: [string, string, string] = useMemo(() => {
-    return [t("description-01"), t("description-02"), t("description-03")];
+    return [
+      t("not-found-description-01"),
+      t("not-found-description-02"),
+      t("not-found-description-03"),
+    ];
   }, [t]);
 
   return (

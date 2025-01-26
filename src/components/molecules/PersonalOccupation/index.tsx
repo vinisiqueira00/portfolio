@@ -7,39 +7,39 @@ import { PersonalName } from "@/components/atoms/PersonalName";
 import { PersonalProfession } from "@/components/atoms/PersonalProfession";
 
 function PersonalOccupation() {
-  const t = useTranslations("Home.Presentation");
+  const t = useTranslations();
 
   return (
     <div className="flex flex-col items-stretch justify-center gap-6 max-w-md">
       <div className="flex flex-col items-stretch justify-center gap-2">
-        <PersonalName text={t("name")} />
+        <PersonalName text={t("home-presentation-name")} />
         <PersonalProfession
-          textBefore={t("occupation-before")}
-          textContent={t("occupation-content")}
-          textAfter={t("occupation-after")}
+          textBefore={t("home-presentation-occupation-before")}
+          textContent={t("home-presentation-occupation-content")}
+          textAfter={t("home-presentation-occupation-after")}
         />
       </div>
       <div className="flex flex-col items-stretch justify-center gap-1">
         <OccupationCurrent
-          label={t("occupation-current-label")}
-          value={t("occupation-current-value")}
+          label={t("home-presentation-occupation-current-label")}
+          value={t("home-presentation-occupation-current-value")}
         />
 
         <OccupationPrevious
           texts={[
             {
-              label: t("occupation-previous-label-01"),
-              value: t("occupation-previous-value-01"),
+              label: t("home-presentation-occupation-previous-label-01"),
+              value: t("home-presentation-occupation-previous-value-01"),
             },
             {
-              label: t("occupation-previous-label-02"),
-              value: t("occupation-previous-value-02"),
+              label: t("home-presentation-occupation-previous-label-02"),
+              value: t("home-presentation-occupation-previous-value-02"),
             },
           ]}
         />
         <OccupationDegree
-          label={t("occupation-study-label")}
-          value={t("occupation-study-value")}
+          label={t("home-presentation-occupation-study-label")}
+          value={t("home-presentation-occupation-study-value")}
         />
       </div>
     </div>

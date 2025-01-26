@@ -21,7 +21,7 @@ interface IProject {
 }
 
 function ProjectList() {
-  const t = useTranslations("Home.Projects");
+  const t = useTranslations();
 
   const projectsData: IProject[] = [
     {
@@ -30,27 +30,27 @@ function ProjectList() {
         altKey: "Crypto RSA",
       },
       status: "FINISHED",
-      name: t("project-01.title"),
-      subTitle: t("project-01.subtitle"),
-      description: t("project-01.description"),
+      name: t("projects-project-01-title"),
+      subTitle: t("projects-project-01-subtitle"),
+      description: t("projects-project-01-description"),
       tags: {
-        highlight: t("project-01.highlight"),
+        highlight: t("projects-project-01-highlight"),
         others: [
-          t("project-01.tag-01"),
-          t("project-01.tag-02"),
-          t("project-01.tag-03"),
+          t("projects-project-01-tag-01"),
+          t("projects-project-01-tag-02"),
+          t("projects-project-01-tag-03"),
         ],
       },
       link: {
-        href: "https://cryptorsa.vinisiqueira.com.br",
-        text: t("project-01.button"),
+        href: t("projects-project-01-link"),
+        text: t("projects-project-01-button"),
       },
     },
   ];
 
   return (
     <div className="flex flex-col items-stretch justify-center w-full max-w-5xl gap-8 px-6">
-      <ProjectsTitleSection text={t("title-section")} />
+      <ProjectsTitleSection text={t("projects-title-section")} />
 
       <div className="flex flex-col items-stretch justify-start gap-8">
         {projectsData.map((project) => (
@@ -66,7 +66,7 @@ function ProjectList() {
           />
         ))}
 
-        <ProjectsDisclaimer text={t("text-ending")} />
+        <ProjectsDisclaimer text={t("projects-text-ending")} />
       </div>
     </div>
   );

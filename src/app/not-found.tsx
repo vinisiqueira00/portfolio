@@ -5,9 +5,9 @@ import { useTranslations } from "next-intl";
 import { useMemo } from "react";
 
 export default function NotFoundPage() {
-  const t = useTranslations("Not-Found");
+  const t = useTranslations();
 
-  const buttonText = useMemo(() => t("button-text"), [t]);
+  const buttonText = useMemo(() => t("not-found-button-text"), [t]);
 
   return (
     <section className="flex-1 flex items-center justify-center">
