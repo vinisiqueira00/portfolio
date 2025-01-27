@@ -19,7 +19,7 @@ interface ProjectContentProps {
 
 function ProjectContent(props: ProjectContentProps) {
   return (
-    <div className="grid grid-cols-1 grid-rows-[auto] gap-4 box-border md:gap-12 md:grid-cols-2 md:grid-rows-1">
+    <div className="grid grid-cols-1 gap-4 box-border">
       <ProjectThumbs
         urlKey={props.thumbs.urlKey}
         altKey={props.thumbs.altKey}

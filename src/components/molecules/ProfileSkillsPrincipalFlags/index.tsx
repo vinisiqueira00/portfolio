@@ -6,7 +6,7 @@ function ProfileSkillsPrincipalFlags() {
   const t = useTranslations();
 
   return (
-    <div className="flex flex-wrap items-start justify-start gap-x-4 gap-y-3">
+    <div className="flex flex-col items-start justify-start gap-4 md:flex-row md:flex-wrap md:gap-x-4 md:gap-y-3">
       <ProfileSkillsFlag
         isHighlight={true}
         text={[

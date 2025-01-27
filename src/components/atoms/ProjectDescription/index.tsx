@@ -4,7 +4,7 @@ interface ProjectDescriptionProps {
 
 function ProjectDescription({ text }: ProjectDescriptionProps) {
   return (
-    <p className="font-medium text-sm md:text-base text-text-05 dark:text-text-08 leading-6">
+    <p className="font-medium text-sm text-text-05 dark:text-text-08 leading-6">
       {text}
     </p>
   );

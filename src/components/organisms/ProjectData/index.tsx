@@ -16,7 +16,7 @@ interface ProjectDataProps {
 
 function ProjectData(props: ProjectDataProps) {
   return (
-    <div className="flex-1 flex flex-col items-stretch justify-start gap-3 md:gap-4 py-0 md:py-4">
+    <div className="flex-1 flex flex-col items-stretch justify-start gap-3 py-0">
       <ProjectHeader
         status={props.status}
         name={props.name}

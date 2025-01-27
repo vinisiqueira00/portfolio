@@ -7,7 +7,7 @@ function ProfileSkillsOtherSection() {
   const t = useTranslations();
 
   return (
-    <div className="flex flex-col items-start justify-start gap-2 md:flex-row">
+    <div className="flex flex-col items-start justify-start gap-4 md:flex-row">
       <ProfileSkillsSubtitle text={t("about-skills-second-group-title")} />
       <ProfileSkillsOtherFlags />
     </div>

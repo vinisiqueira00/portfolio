@@ -4,7 +4,7 @@ interface ProfileSkillsSubtitleProps {
 
 function ProfileSkillsSubtitle({ text }: ProfileSkillsSubtitleProps) {
   return (
-    <span className="min-w-24 font-medium text-base text-text-01 dark:text-text-08">
+    <span className="min-w-24 font-medium text-base leading-none text-text-01 dark:text-text-08">
       {text}
     </span>
   );

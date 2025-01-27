@@ -51,7 +51,8 @@ function ProjectList() {
     <div className="flex flex-col items-stretch justify-center w-full max-w-5xl gap-8 px-4">
       <ProjectsTitleSection text={t("projects-title-section")} />
 
-      <div className="flex flex-col items-stretch justify-start gap-8">
+      {/* <div className="flex flex-col items-stretch justify-start gap-8"> */}
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {projectsData.map((project) => (
           <ProjectContent
             key={project.name}

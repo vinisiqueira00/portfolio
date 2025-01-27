@@ -4,7 +4,7 @@ interface ProfileSkillsTitleProps {
 
 function ProfileSkillsTitle({ text }: ProfileSkillsTitleProps) {
   return (
-    <h3 className="font-bold text-base text-text-02 dark:text-text-03">
+    <h3 className="font-bold text-base leading-none text-text-02 dark:text-text-03">
       {text}
     </h3>
   );
