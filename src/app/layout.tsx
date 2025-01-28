@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { getLocale } from "next-intl/server";
-import { GoogleTagManager } from "@next/third-parties/google";
 
 import "./globals.css";
 
