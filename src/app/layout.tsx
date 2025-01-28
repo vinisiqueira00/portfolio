@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { getLocale } from "next-intl/server";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 import "./globals.css";
 
@@ -46,18 +47,11 @@ export default async function LocaleLayout({ children }: LocaleLayoutProps) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <GoogleTagManager gtmId="GTM-KPTLPL8" />
+
       <body
         className={`${inter.className} min-h-screen flex flex-col antialiased bg-background-03 dark:bg-background-02`}
       >
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KPTLPL8"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-
         <Providers>
           <Header />
 
