@@ -1,13 +1,9 @@
-import { ProfilePresentation } from "@/components/templates/ProfilePresentation";
-import { ProfileSkillsSection } from "@/components/templates/ProfileSkillsSection";
-
 export default function About() {
   return (
-    <main className="flex items-center justify-center pt-16 md:pt-24">
-      <div className="flex flex-col items-stretch justify-start gap-16 max-w-5xl px-4">
-        <ProfilePresentation />
-        <ProfileSkillsSection />
-      </div>
+    <main className="flex-1 bg-light-gradient-003 dark:bg-dark-gradient-003">
+      <section className="flex items-center justify-center py-44">
+        <h1>About page</h1>
+      </section>
     </main>
   );
 }

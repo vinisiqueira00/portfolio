@@ -1,47 +1,26 @@
 import Image from "next/image";
 
 interface ProjectThumbsProps {
-  urlKey: string;
-  altKey: string;
+  url: string;
+  alt: string;
+  type: string;
 }
 
-function ProjectThumbs({ urlKey, altKey }: ProjectThumbsProps) {
+function ProjectThumbs({ url, alt, type }: ProjectThumbsProps) {
   return (
-    <div className="grid grid-cols-4 grid-rows-1 gap-2 rounded-xl p-8 bg-background-01 dark:bg-background-08">
-      <div className="relative flex items-center justify-center w-full h-auto aspect-[1/2.15] m-auto">
-        <Image
-          className="rounded shadow-shadow-02 aspect-auto object-cover"
-          src={`/images/${urlKey}-01.png`}
-          alt={`${altKey} 01 Image`}
-          fill
-        />
-      </div>
-
-      <div className="relative flex items-center justify-center w-full h-auto aspect-[1/2.15] m-auto">
-        <Image
-          className="rounded shadow-shadow-02 aspect-auto object-cover"
-          src={`/images/${urlKey}-02.png`}
-          alt={`${altKey} 02 Image`}
-          fill
-        />
-      </div>
-
-      <div className="relative flex items-center justify-center w-full h-auto aspect-[1/2.15] m-auto">
-        <Image
-          className="rounded shadow-shadow-02 aspect-auto object-cover"
-          src={`/images/${urlKey}-03.png`}
-          alt={`${altKey} 03 Image`}
-          fill
-        />
-      </div>
-
-      <div className="relative flex items-center justify-center w-full h-auto aspect-[1/2.15] m-auto">
-        <Image
-          className="rounded shadow-shadow-02 aspect-auto object-cover"
-          src={`/images/${urlKey}-04.png`}
-          alt={`${altKey} 04 Image`}
-          fill
-        />
+    <div className="flex items-center justify-center rounded-2xl bg-light-gradient-001 dark:bg-dark-gradient-001 overflow-hidden">
+      <div className="relative w-full aspect-square md:aspect-video">
+        {url ? (
+          <Image
+            data-fit={type}
+            className="w-full object-contain data-[fit=cover]:object-cover"
+            src={url}
+            alt={alt}
+            fill
+          />
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );

@@ -1,71 +1,43 @@
 import { useTranslations } from "next-intl";
 
-import { ProjectContent } from "@/components/templates/ProjectContent";
-import { ProjectsTitleSection } from "@/components/atoms/ProjectsTitleSection";
+import { getProjectInformation } from "@/utils/getProjectInformation";
 
-interface IProject {
-  thumbs: {
-    urlKey: string;
-    altKey: string;
-  };
-  status: "FINISHED" | "IN_EXECUTION";
-  name: string;
-  subTitle: string;
-  description: string;
-  tags: {
-    highlight: string;
-    others: string[];
-  };
-  link: { href: string; text: string };
+import { Button } from "@/components/atoms/Button";
+import { ProjectContent } from "@/components/templates/ProjectContent";
+
+interface ProjectListProps {
+  count: number | "all";
 }
 
-function ProjectList() {
+function ProjectList({ count }: ProjectListProps) {
   const t = useTranslations();
 
-  const projectsData: IProject[] = [
-    {
-      thumbs: {
-        urlKey: "cryptorsa",
-        altKey: "Crypto RSA",
-      },
-      status: "FINISHED",
-      name: t("projects-project-01-title"),
-      subTitle: t("projects-project-01-subtitle"),
-      description: t("projects-project-01-description"),
-      tags: {
-        highlight: t("projects-project-01-highlight"),
-        others: [
-          t("projects-project-01-tag-01"),
-          t("projects-project-01-tag-02"),
-          t("projects-project-01-tag-03"),
-        ],
-      },
-      link: {
-        href: t("projects-project-01-link"),
-        text: t("projects-project-01-button"),
-      },
-    },
+  const projects = [
+    getProjectInformation(t, "crypto-rsa"),
+    getProjectInformation(t, "integration-gshop"),
+    getProjectInformation(t, "rave-redesign"),
+    getProjectInformation(t, "pay-point"),
   ];
 
   return (
-    <div className="flex flex-col items-stretch justify-center w-full max-w-5xl gap-8 px-4">
-      <ProjectsTitleSection text={t("projects-title-section")} />
-
-      {/* <div className="flex flex-col items-stretch justify-start gap-8"> */}
+    <div className="flex flex-col items-stretch justify-center w-full max-w-screen-xl gap-8 px-4">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        {projectsData.map((project) => (
-          <ProjectContent
-            key={project.name}
-            thumbs={project.thumbs}
-            status={project.status}
-            name={project.name}
-            subTitle={project.subTitle}
-            description={project.description}
-            tags={project.tags}
-            link={project.link}
-          />
-        ))}
+        {(count === "all" ? projects : projects.slice(0, count)).map(
+          (project) => (
+            <ProjectContent key={project.name} {...project} />
+          )
+        )}
       </div>
+
+      {count !== "all" && (
+        <div className="flex items-center justify-center w-full h-auto">
+          <Button
+            label={t("projects-button-label")}
+            type="secondary"
+            link={t("projects-button-link")}
+          />
+        </div>
+      )}
     </div>
   );
 }

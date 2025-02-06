@@ -1,0 +1,26 @@
+import { useTranslations } from "next-intl";
+
+import { Copyright } from "@/components/atoms/Copyright";
+import { SocialGroup } from "@/components/molecules/SocialGroup";
+import { ContactForm } from "@/components/molecules/ContactForm";
+import { FooterTexts } from "@/components/molecules/FooterTexts";
+
+function Footer() {
+  const t = useTranslations("");
+
+  return (
+    <footer className="flex flex-col items-center justify-center rounded-t-[64px] pt-20 pb-4 border border-light-neutral-400 dark:border-dark-neutral-400 bg-light-gradient-002 dark:bg-dark-gradient-002">
+      <div className="flex flex-col items-stretch justify-end gap-16 w-full max-w-5xl px-4 md:gap-24">
+        <div className="flex flex-col items-center justify-end gap-12">
+          <FooterTexts />
+          <ContactForm />
+          <SocialGroup />
+        </div>
+
+        <Copyright text={t("footer-texts-copyright")} />
+      </div>
+    </footer>
+  );
+}
+
+export { Footer };

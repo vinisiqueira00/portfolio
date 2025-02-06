@@ -1,17 +1,17 @@
-import { ProjectName } from "@/components/atoms/ProjectName";
-import { ProjectSubTitle } from "@/components/atoms/ProjectSubTitle";
+import { ProjectArea } from "@/components/atoms/ProjectArea";
+import { ProjectType } from "@/components/atoms/ProjectType";
 
 interface ProjectHeaderProps {
-  status: "FINISHED" | "IN_EXECUTION";
-  name: string;
-  subTitle: string;
+  area: string;
+  type: string;
 }
 
-function ProjectHeader({ name, subTitle }: ProjectHeaderProps) {
+function ProjectHeader({ area, type }: ProjectHeaderProps) {
   return (
     <div className="flex items-center justify-start gap-2">
-      <ProjectName text={name} />
-      <ProjectSubTitle text={subTitle} />
+      <ProjectArea text={area} />
+      <span className="block w-0.5 h-0.5 rounded bg-light-neutral-600 dark:bg-dark-neutral-600" />
+      <ProjectType text={type} />
     </div>
   );
 }
