@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef } from "react";
+import { useRef } from "react";
 import { motion } from "motion/react";
 
 import { useFollowPointer } from "@/hooks/useFollowPointer";
