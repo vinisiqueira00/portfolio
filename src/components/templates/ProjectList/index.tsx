@@ -20,7 +20,7 @@ function ProjectList({ count }: ProjectListProps) {
   ];
 
   return (
-    <div className="flex flex-col items-stretch justify-center w-full max-w-screen-xl gap-8 px-4">
+    <div className="flex flex-col items-stretch justify-center w-full gap-8">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {(count === "all" ? projects : projects.slice(0, count)).map(
           (project) => (

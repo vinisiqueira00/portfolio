@@ -4,9 +4,9 @@ interface PresentationTitleProps {
 
 function PresentationTitle({ text }: PresentationTitleProps) {
   return (
-    <span className="font-heading leading-normal text-center font-normal text-2xl text-light-neutral-900 dark:text-dark-neutral-900 md:text-3xl md:text-left">
+    <h2 className="font-heading text-center font-normal text-2xl text-light-neutral-900 dark:text-dark-neutral-900 md:text-3xl md:text-left !leading-normal">
       {text}
-    </span>
+    </h2>
   );
 }
 

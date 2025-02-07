@@ -9,7 +9,7 @@ interface OccupationCurrentProps {
 
 function OccupationCurrent({ label, value, link }: OccupationCurrentProps) {
   return (
-    <p className="flex item-center justify-start gap-1 text-center font-normal text-base text-light-neutral-600 dark:text-dark-neutral-600 md:text-left">
+    <p className="flex item-center justify-center gap-1 font-normal text-base text-light-neutral-600 dark:text-dark-neutral-600 md:justify-start">
       {label}
       <Link
         href={link}

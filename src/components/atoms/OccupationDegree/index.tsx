@@ -9,11 +9,11 @@ interface OccupationDegreeProps {
 
 function OccupationDegree({ label, value, link }: OccupationDegreeProps) {
   return (
-    <p className="flex item-center justify-start gap-1 text-center font-normal text-base text-light-neutral-600 dark:text-dark-neutral-600 md:text-left">
+    <p className="flex item-center justify-center gap-1 font-normal text-base text-light-neutral-600 dark:text-dark-neutral-600 md:justify-start">
       {label}
       <Link
-        target="_blank"
         href={link}
+        target="_blank"
         className="flex items-center justify-center font-medium text-light-neutral-900 dark:text-dark-neutral-900"
       >
         {value} <ArrowUpRight size={16} strokeWidth={2} />
