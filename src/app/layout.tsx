@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
-import { Bricolage_Grotesque, Lato } from "next/font/google";
 import { getLocale } from "next-intl/server";
+import { Bricolage_Grotesque, Lato } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 import "./globals.css";
 
-import Providers from "@/app/providers";
+import { generateMetadata } from "@/config/metadata";
 
-import { Locale } from "@/i18n/config";
+import Providers from "@/app/providers";
 
 import { Header } from "@/components/organisms/Header";
 import { Footer } from "@/components/organisms/Footer";
@@ -25,26 +24,7 @@ const lato = Lato({
   variable: "--font-lato",
 });
 
-type CustomMetadata = Record<Locale, Metadata>;
-
-export async function generateMetadata() {
-  const locale = (await getLocale()) as Locale;
-
-  const metadata: CustomMetadata = {
-    pt: {
-      title: "Vini Siqueira - Front-end sênior",
-      description:
-        "Meu local onde falo um pouco de mim e que eu já entreguei de resultado",
-    },
-    en: {
-      title: "Vini Siqueira - Sr front-end developer",
-      description:
-        "My place where I talk a little about myself and what I have already delivered as results",
-    },
-  };
-
-  return metadata[locale];
-}
+export { generateMetadata };
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
