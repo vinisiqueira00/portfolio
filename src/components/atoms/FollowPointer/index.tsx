@@ -13,7 +13,7 @@ function FollowPointer() {
   return (
     <motion.div
       ref={ref}
-      className="hidden fixed top-0 left-0 w-4 h-4 rounded-full bg-light-neutral-900 md:block invert mix-blend-difference pointer-events-none z-20"
+      className="hidden fixed top-0 left-0 w-4 h-4 rounded-full bg-light-neutral-900 md:block invert mix-blend-difference pointer-events-none z-50"
       style={{ x, y }}
     />
   );

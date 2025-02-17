@@ -14,7 +14,7 @@ function Header() {
   const t = useTranslations();
 
   return (
-    <header className="fixed top-0 left-0 right-0 flex flex-col items-center justify-start w-full bg-red-500">
+    <header className="fixed top-0 left-0 right-0 flex flex-col items-center justify-start w-full bg-red-500 z-10">
       <div className="absolute flex items-center justify-center w-screen h-auto p-3 z-20">
         <div className="flex flex-col items-stretch justify-start gap-8 w-full px-6 py-4 md:py-6 rounded-2xl bg-light-neutral-000 dark:bg-dark-neutral-000">
           <div className="flex items-center justify-center w-full gap-4">

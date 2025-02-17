@@ -41,11 +41,11 @@ export default async function LocaleLayout({ children }: LocaleLayoutProps) {
         className={`${lato.variable} ${bricolageGrotesque.variable} flex flex-col antialiased min-h-screen bg-light-neutral-000 dark:bg-dark-neutral-000 text-light-neutral-900 dark:text-dark-neutral-900`}
       >
         <Providers>
-          {children}
+          <Header />
+          <main className="z-0">{children}</main>
+          <Footer />
 
           <FollowPointer />
-          <Header />
-          <Footer />
         </Providers>
       </body>
     </html>
