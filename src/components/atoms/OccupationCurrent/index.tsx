@@ -1,23 +1,22 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
-// import { Link } from "@/i18n/routing";
-
 interface OccupationCurrentProps {
   label: string;
   value: string;
+  link: string;
 }
 
-function OccupationCurrent(props: OccupationCurrentProps) {
+function OccupationCurrent({ label, value, link }: OccupationCurrentProps) {
   return (
-    <p className="inline font-normal text-base text-text-01 dark:text-text-08">
-      {props.label}{" "}
+    <p className="flex item-center justify-center gap-1 font-normal text-base text-light-neutral-600 dark:text-dark-neutral-600 md:justify-start">
+      {label}
       <Link
-        href="https://cadastra.com/pt-br"
+        href={link}
         target="_blank"
-        className="inline-flex items-center justify-center text-text-02 dark:text-text-07 font-medium"
+        className="flex items-center justify-center font-medium text-light-neutral-900 dark:text-dark-neutral-900"
       >
-        {props.value} <ArrowUpRight size={16} strokeWidth={2} />
+        {value} <ArrowUpRight size={16} strokeWidth={2} />
       </Link>
     </p>
   );

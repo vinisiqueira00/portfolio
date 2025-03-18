@@ -4,9 +4,9 @@ interface ProjectNameProps {
 
 function ProjectName({ text }: ProjectNameProps) {
   return (
-    <h4 className="font-semibold text-lg text-text-02 dark:text-text-07 md:text-2xl md:font-bold !leading-none">
+    <h3 className="font-heading leading-none font-bold text-xl text-light-neutral-900 dark:text-dark-neutral-900 md:text-2xl">
       {text}
-    </h4>
+    </h3>
   );
 }
 

@@ -4,7 +4,7 @@ interface CopyrightProps {
 
 function Copyright({ text }: CopyrightProps) {
   return (
-    <p className="font-medium text-sm text-text-05 dark:text-text-08 text-left md:text-base md:text-right">
+    <p className="w-full font-normal text-sm text-center text-light-neutral-600 dark:text-dark-neutral-600">
       {text}
     </p>
   );

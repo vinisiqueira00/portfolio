@@ -1,9 +1,12 @@
-import { ReactNode } from "react";
 import { ThemeProvider } from "next-themes";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
-export default async function Providers({ children }: { children: ReactNode }) {
+interface ProvidersProps {
+  children: React.ReactNode;
+}
+
+export default async function Providers({ children }: ProvidersProps) {
   const locale = await getLocale();
   const messages = await getMessages();
 
