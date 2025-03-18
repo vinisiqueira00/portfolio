@@ -4,6 +4,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 
 import "./globals.css";
 
+import { keys } from "@/config/keys";
 import { generateMetadata } from "@/config/metadata";
 
 import Providers from "@/app/providers";
@@ -35,7 +36,7 @@ export default async function LocaleLayout({ children }: LocaleLayoutProps) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <GoogleTagManager gtmId="GTM-KPTLPL8" />
+      <GoogleTagManager gtmId={keys.GOOGLE_TAG_MANAGER} />
 
       <body
         className={`${lato.variable} ${bricolageGrotesque.variable} flex flex-col antialiased min-h-screen bg-light-neutral-000 dark:bg-dark-neutral-000 text-light-neutral-900 dark:text-dark-neutral-900`}

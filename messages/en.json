@@ -1,6 +1,7 @@
 {
   "header-logotype-firstname": "Vini",
   "header-logotype-lastname": "Siqueira",
+
   "navbar-item-01-label": "Home",
   "navbar-item-01-link": "/",
   "navbar-item-02-label": "Portfolio",
@@ -8,12 +9,16 @@
   "navbar-item-03-label": "About",
   "navbar-item-03-link": "/about",
   "navbar-item-04-label": "Resume",
-  "navbar-item-04-link": "/resume",
+  "navbar-item-04-link": "/files/resume-en-us.pdf",
+  "navbar-item-04-name": "resume-of-vini-siqueira.pdf",
+
   "footer-texts-title": "Let's build something together",
   "footer-texts-subtitle": "Want to talk more? Hit me up below to set up a call I'm looking forward to connecting.",
   "footer-texts-copyright": "© 2025 Vinícius Siqueira. All rights reserved.",
+
   "contact-placeholder": "Your message",
   "contact-button-submit": "Send message",
+
   "social-title": "Or contact me in social media",
   "social-01-label": "LinkedIn",
   "social-01-link": "https://www.linkedin.com/in/vinisiqueira00",
@@ -21,6 +26,7 @@
   "social-02-link": "https://github.com/vinisiqueira00",
   "social-03-label": "Instagram",
   "social-03-link": "https://www.instagram.com/vinisiqueira00",
+
   "presentation-texts-contact": "Available to contact",
   "presentation-texts-location": "Rio de Janeiro, Brazil",
   "presentation-texts-title": "Creating solutions that\ntransform businesses and\ndeliver tangible outcomes.",
@@ -34,6 +40,7 @@
   "presentation-buttons-01-link": "#contact",
   "presentation-buttons-02-label": "See portfolio",
   "presentation-buttons-02-link": "/portfolio",
+
   "projects-button-label": "See portfolio",
   "projects-button-link": "/portfolio",
   "projects": {
@@ -74,13 +81,88 @@
       "link": ""
     }
   },
+
   "catchphrase-text": "Crafting digital solutions that\ndrive growth and delight users.",
+
   "portfolio-texts-title": "My portfolio. My works.",
   "portfolio-texts-subtitle": "Here are some of my projects that demonstrate expertise in different areas.",
+
   "error-texts-title": "Oh, no! Page not found!",
   "error-texts-subtitle": "But don't worry! The solution to this problem is up to us, and you just have to choose what you want:",
   "error-buttons-01-label": "Go to home",
   "error-buttons-01-link": "/",
   "error-buttons-02-label": "See portfolio",
-  "error-buttons-02-link": "/portfolio"
+  "error-buttons-02-link": "/portfolio",
+
+  "about-presentation-image": "/images/me-02.png",
+  "about-presentation-texts-title": "About who Vini is",
+  "about-presentation-texts-subtitle": "Hey there, I'm Vini, a front-end developer with a\npassion for UI design and technologies.",
+  "about-certificates-texts-title": "My certificates",
+  "about-certificates-texts-subtitle": "Here are some of my certificates. Remember that I extract a lot of knowledge from\ndifferent sources, which add a lot of results but do not provide certification.",
+  "about-certificates": {
+    "01": {
+      "label": "Year of 2021",
+      "image": "/certificates/certificate-01.png",
+      "link": "#"
+    },
+    "02": {
+      "label": "Year of 2022",
+      "image": "/certificates/certificate-02.png",
+      "link": "#"
+    },
+    "03": {
+      "label": "",
+      "image": "/certificates/certificate-03.png",
+      "link": "#"
+    },
+    "04": {
+      "label": "Year of 2023",
+      "image": "/certificates/certificate-04.png",
+      "link": "#"
+    },
+    "05": {
+      "label": "Year of 2024",
+      "image": "/certificates/certificate-05.png",
+      "link": "#"
+    }
+  },
+  "about-skills-texts-title": "Areas of best skills",
+  "about-skills-texts-subtitle": "Among others that certainly wouldn't fit here",
+  "about-skills-table-01": {
+    "title": "Front-end & design",
+    "item-01": "ReactJS with Next.js",
+    "item-02": "Javascript & Typescript",
+    "item-03": "Tailwindcss",
+    "item-04": "CSS & SASS",
+    "item-05": "Figma",
+    "item-06": "UI/UX Concepts"
+  },
+  "about-skills-table-02": {
+    "title": "Back-end & logic",
+    "item-01": "NodeJS",
+    "item-02": "Express & NestJS",
+    "item-03": "RabbitMQ with Redis",
+    "item-04": "MySQL & Mongo",
+    "item-05": "Algorithm & data structure",
+    "item-06": "Rest API & GraphQL"
+  },
+  "about-skills-table-03": {
+    "title": "Social & behavioral",
+    "item-01": "Communication",
+    "item-02": "Technical leadership",
+    "item-03": "Commitment to objectives",
+    "item-04": "Delivery quality",
+    "item-05": "Responsibility",
+    "item-06": "Resilient & friendly."
+  },
+  "about-personal-facts-image": "/images/me-03.png",
+  "about-personal-facts-texts-title": "Some personal facts about me",
+  "about-personal-facts-texts-body": "I have been married for 1 year to a wonderful woman and the mother of my future children - She is my priority in life!\n\nI am a Protestant Christian, professing the Baptist doctrine as the most faithful to what I understand from the Scriptures.\n\nI am a car enthusiast, although I do not know much about mechanics.\n\nMy favorite style of music is RAP, and I really enjoy watching freestyle battles - I follow the national scene assiduously.",
+  "about-portfolio-thumb-01-url": "/images/thumbnail-crypto-rsa.png",
+  "about-portfolio-thumb-02-url": "/images/thumbnail-integration-gshop.png",
+  "about-portfolio-thumb-03-url": "/images/thumbnail-rave-redesign.png",
+  "about-portfolio-texts-title": "See my work and expertise",
+  "about-portfolio-texts-subtitle": "From UI/UX design to API implementation, here I share my\nknowledge and skills in different areas.",
+  "about-portfolio-texts-button": "See portfolio",
+  "about-portfolio-texts-button-link": "/protfolio"
 }

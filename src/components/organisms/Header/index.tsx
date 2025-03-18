@@ -13,6 +13,15 @@ import { MobileNavbarOverlay } from "@/components/atoms/MobileNavbarOverlay";
 function Header() {
   const t = useTranslations();
 
+  function handleResumeClick() {
+    const link = document.createElement("a");
+    link.href = t("navbar-item-04-link");
+    link.download = t("navbar-item-04-name");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
     <header className="fixed top-0 left-0 right-0 flex flex-col items-center justify-start w-full bg-red-500 z-10">
       <div className="absolute flex items-center justify-center w-screen h-auto p-3 z-20">
@@ -36,7 +45,7 @@ function Header() {
                 label={t("navbar-item-03-label")}
               />
               <MenuLink
-                href={t("navbar-item-04-link")}
+                onClick={handleResumeClick}
                 label={t("navbar-item-04-label")}
               />
             </div>

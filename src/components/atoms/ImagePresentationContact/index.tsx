@@ -10,7 +10,7 @@ function ImagePresentationContact({ text }: ImagePresentationContactProps) {
       <span className="relative">
         <div className="w-2.5 h-2.5 rounded-full bg-light-primary-main dark:bg-dark-primary-main border-0" />
         <motion.div
-          className="absolute top-0 left-0 w-2.5 h-2.5 rounded-full bg-light-primary-main"
+          className="absolute top-0 left-0 w-2.5 h-2.5 rounded-full bg-light-primary-main dark:bg-dark-primary-main"
           animate={{
             scale: [1, 3, 1, 1],
             opacity: [1, 0, 0, 1],
