@@ -11,6 +11,7 @@ function ThemeSwitcher() {
   return (
     <button
       className="flex items-center justify-center gap-1 py-4 md:p-0 rounded-2xl md:rounded-none border border-light-neutral-400 dark:border-dark-neutral-400 md:border-0"
+      aria-label="Switch light/dark theme"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       <Sun
