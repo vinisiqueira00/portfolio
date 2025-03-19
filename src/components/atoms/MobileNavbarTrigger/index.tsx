@@ -11,6 +11,7 @@ function MobileNavbarTrigger() {
   return (
     <MotionConfig transition={{ duration: 0.2, ease: "easeInOut" }}>
       <motion.button
+        aria-label="Open/close mobile navbar"
         initial={false}
         animate={isOpened ? "open" : "closed"}
         onClick={isOpened ? close : open}
