@@ -24,6 +24,7 @@ function LocaleSwitcher({ isMobile }: LocaleSwitcherProps) {
       <button
         onClick={() => handleSelectLocale(locale === "pt" ? "en" : "pt")}
         data-pending={isPending}
+        aria-label="Switch PT/BR language"
         className="flex items-center justify-center gap-1 opacity-100 pointer-events-auto data-[pending=true]:opacity-50 data-[pending=true]:pointer-events-none py-2 md:p-0 rounded-2xl border border-background-01 dark:border-background-13 md:border-0"
       >
         <div
@@ -55,6 +56,7 @@ function LocaleSwitcher({ isMobile }: LocaleSwitcherProps) {
       <button
         onClick={() => handleSelectLocale("pt")}
         data-active={locale === "pt"}
+        aria-label="Switch to PT-BR language"
         className="flex items-center justify-center font-normal text-base text-light-neutral-600 dark:text-dark-neutral-600 data-[active=true]:text-light-neutral-900 data-[active=true]:dark:text-dark-neutral-900"
       >
         PT
@@ -67,6 +69,7 @@ function LocaleSwitcher({ isMobile }: LocaleSwitcherProps) {
       <button
         onClick={() => handleSelectLocale("en")}
         data-active={locale === "en"}
+        aria-label="Switch to EN-US language"
         className="flex items-center justify-center font-normal text-base text-light-neutral-600 dark:text-dark-neutral-600 data-[active=true]:text-light-neutral-900 data-[active=true]:dark:text-dark-neutral-900"
       >
         EN
