@@ -42,8 +42,12 @@ export default async function LocaleLayout({ children }: LocaleLayoutProps) {
         className={`${lato.variable} ${bricolageGrotesque.variable} flex flex-col antialiased min-h-screen bg-light-neutral-000 dark:bg-dark-neutral-000 text-light-neutral-900 dark:text-dark-neutral-900`}
       >
         <Providers>
+          <div className="fixed top-0 left-0 right-0 bottom-0 overflow-hidden pointer-events-none z-0 w-full h-auto bg-light-gradient-003 dark:bg-dark-gradient-003" />
+
           <Header />
-          <main className="z-0">{children}</main>
+
+          <main className="z-0 pt-20 flex-1">{children}</main>
+
           <Footer />
 
           <FollowPointer />

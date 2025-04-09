@@ -39,8 +39,17 @@ export default {
 
         // -- NEW --------------------------------------------------------------
 
+        "dark-transparent": "rgba(0,0,0, 0)",
+        "light-transparent": "rgba(255,255,255, 0)",
+
         "dark-primary-main": "#2A9F47",
         "light-primary-main": "#2A9F47",
+
+        "dark-status-alert": "#FBBC05",
+        "light-status-alert": "#FBBC05",
+
+        "dark-status-alert/20": "rgba(251, 188, 5, 0.2)",
+        "light-status-alert/20": "rgba(251, 188, 5, 0.2)",
 
         "dark-neutral-000": "#000000",
         "light-neutral-000": "#FFFFFF",
@@ -94,6 +103,18 @@ export default {
       boxShadow: {
         "shadow-01": "0 0 3rem 0 rgba(0, 0, 0, 0.1)",
         "shadow-02": "0 0 1rem 0 rgba(0, 0, 0, 0.1)",
+      },
+      height: {
+        "1k": "1000px",
+        "1.5k": "1500px",
+        "2k": "2000px",
+        "2.5k": "2500px",
+      },
+      borderRadius: {
+        "4xl": "32px",
+      },
+      fontSize: {
+        "4.5xl": "2.75rem",
       },
     },
   },

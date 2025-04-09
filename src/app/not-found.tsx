@@ -7,7 +7,7 @@ export default function NotFoundPage() {
   const t = useTranslations();
 
   return (
-    <div className="flex-1 bg-light-gradient-003 dark:bg-dark-gradient-003 pt-20">
+    <div>
       <section className="flex flex-col items-center justify-center gap-10 w-full h-auto max-w-screen-xl mx-auto px-4 py-40">
         <div className="flex items-center justify-center w-auto h-auto p-4 rounded-[2rem] border border-light-neutral-400 dark:border-dark-neutral-400 bg-light-neutral-000/30 dark:bg-dark-neutral-000/30">
           <div className="flex items-center justify-center w-auto h-auto py-12 px-10 rounded-3xl bg-light-neutral-000 dark:bg-dark-neutral-000">
