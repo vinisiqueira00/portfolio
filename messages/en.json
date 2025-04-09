@@ -48,10 +48,148 @@
       "thumb-url": "/images/thumbnail-crypto-rsa.png",
       "thumb-alt": "The Crypto RSA project thumbnail",
       "thumb-type": "contain",
-      "title": "CryptoRSA",
+      "title": "Crypto RSA",
       "area": "Encryption",
       "type": "Web full-stack",
-      "link": "https://cryptorsa.vinisiqueira.com.br"
+      "link": "/project/crypto-rsa",
+      "details": {
+        "name": "Crypto RSA",
+        "description": "A complete project, which works with advanced concepts from design to RSA cryptography.",
+        "flags": [
+          "Figma",
+          "NextJS",
+          "Tailwind",
+          "NodeJS",
+          "Express",
+          "Typescript"
+        ],
+        "buttons": [
+          {
+            "label": "See project",
+            "link": "https://cryptorsa.vinisiqueira.com.br"
+          },
+          {
+            "label": "See code",
+            "link": "https://github.com/vinisiqueira00/crypto-rsa-backend"
+          }
+        ],
+        "empty-buttons-message": "Como esta é uma implementação para uma empresa privada, não haverá exposição do código nem explicação das regras de negócio.",
+        "board": [
+          {
+            "label": "My role",
+            "value": "Designer & developer"
+          },
+          {
+            "label": "Client",
+            "value": "Teacher (college)"
+          },
+          {
+            "label": "Delivery",
+            "value": "Web platform"
+          },
+          {
+            "label": "Timeline",
+            "value": "2 months"
+          }
+        ],
+        "first-banner-area": ["/projects/crypto-rsa/full-banner-01.png"],
+        "emphasized-sentence": "CryptoRSA is a fast and optimized cryptography platform prioritizing the security of the custom RSA algorithm.",
+        "second-banner-area": [
+          "/projects/crypto-rsa/mid-banner-02.1.png",
+          "/projects/crypto-rsa/mid-banner-02.2.png"
+        ],
+        "third-banner-area": ["/projects/crypto-rsa/full-banner-03.png"],
+        "content": [
+          [
+            {
+              "type": "title",
+              "data": "Screen navigation"
+            },
+            {
+              "type": "description",
+              "data": "Because it is an application whose focus was precisely to be very simple and easy to use, we chose to implement only 3 pages, where all pages access all pages."
+            },
+            {
+              "type": "images",
+              "data": [
+                {
+                  "title": "",
+                  "url-light": "/projects/crypto-rsa/diagram-01-light.svg",
+                  "url-dark": "/projects/crypto-rsa/diagram-01-dark.svg",
+                  "alt": "Diagram of Crypto RSA project"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "type": "title",
+              "data": "Request flow"
+            },
+            {
+              "type": "description",
+              "data": "To be objective, there will be only 3 endpoints implemented in the REST API, and each one will be served by one of the pages."
+            },
+            {
+              "type": "images",
+              "data": [
+                {
+                  "title": "",
+                  "url-light": "/projects/crypto-rsa/diagram-02-light.svg",
+                  "url-dark": "/projects/crypto-rsa/diagram-02-dark.svg",
+                  "alt": "Diagram of Crypto RSA project"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "type": "title",
+              "data": "Delivery target"
+            },
+            {
+              "type": "description",
+              "data": "A web platform capable of encrypting and decrypting the contents of a txt file, whose RSA encryption is customized, that is, without using an external library. It must deliver an interface that has a simple approach and is attractive."
+            },
+            {
+              "type": "list",
+              "data": [
+                {
+                  "index": "1",
+                  "text": "The sender must insert a TXT file with the message"
+                },
+                {
+                  "index": "4",
+                  "text": "The recipient must insert the encrypted TXT file"
+                },
+                {
+                  "index": "2",
+                  "text": "The sender must inform the public RSA key"
+                },
+                {
+                  "index": "5",
+                  "text": "The recipient must inform the private RSA key"
+                },
+                {
+                  "index": "3",
+                  "text": "The sender will receive the encrypted TXT file"
+                },
+                {
+                  "index": "6",
+                  "text": "The recipient will receive the decrypted TXT file"
+                }
+              ]
+            }
+          ]
+        ],
+        "prototype": {
+          "title": "High-fidelity prototype",
+          "description": "Below is a preview of the high fidelity prototype built in Figma. There you can find the desktop and mobile prototypes, as well as some design decisions and a brief color tokenization.",
+          "image": "/projects/crypto-rsa/prototypes-01.png",
+          "label": "See figma",
+          "link": "https://www.figma.com/design/rMwhr1u5ep9D6wj1INLQ5H/CryptoRSA?node-id=0-1&t=mcgurmsOTpAuAz1I-1"
+        }
+      }
     },
     "integration-gshop": {
       "thumb-url": "/images/thumbnail-integration-gshop.png",
@@ -60,7 +198,156 @@
       "title": "Integration - VTEX with GShop",
       "area": "Retail Store",
       "type": "Back-end Cron Job",
-      "link": ""
+      "link": "/project/integration-gshop",
+      "details": {
+        "name": "Integration VTEX with GShop",
+        "description": "Plan and implement a solution to capture SKUs from the VTEX catalog every day and integrate with Google Shopping.",
+        "flags": ["Back-end", "Load Balance", "Queue", "Cron Job"],
+        "buttons": [],
+        "empty-buttons-message": "Como esta é uma implementação para uma empresa privada, não haverá exposição do código nem explicação das regras de negócio.",
+        "board": [
+          {
+            "label": "My role",
+            "value": "Architect & developer"
+          },
+          {
+            "label": "Client",
+            "value": "Large retail client"
+          },
+          {
+            "label": "Delivery",
+            "value": "Back-end script"
+          },
+          {
+            "label": "Timeline",
+            "value": "4 months"
+          }
+        ],
+        "first-banner-area": [
+          "/projects/integration-gshop/mid-banner-01.1.png",
+          "/projects/integration-gshop/mid-banner-01.2.png"
+        ],
+        "emphasized-sentence": "Responsible for saving a lot of money, this script delivers results that maximize the company's profit.",
+        "second-banner-area": [],
+        "third-banner-area": [],
+        "content": [
+          [
+            {
+              "type": "title",
+              "data": "Simple structural diagram"
+            },
+            {
+              "type": "description",
+              "data": "In this simple structural diagram, we can directly see the main entities of the solution. We can see 2 backend servers (Service and Crawler), VTEX as an external client and Radis & Postgres as Data Storage/Cache Management."
+            },
+            {
+              "type": "images",
+              "data": [
+                {
+                  "title": "",
+                  "url-light": "/projects/integration-gshop/diagram-01-light.svg",
+                  "url-dark": "/projects/integration-gshop/diagram-01-dark.svg",
+                  "alt": "Diagram of Integration Google Shopping project"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "type": "title",
+              "data": "System design diagram"
+            },
+            {
+              "type": "description",
+              "data": "This diagram illustrates the proposed architecture for the solution. Although some components are already implemented, others are in the planning phase and are expected to be implemented in the future.\n\nInitially, the flow will be orchestrated by an initialization script. In its current version, this script communicates directly with the server to obtain the necessary initial data. However, a queue will then be used to efficiently process a large volume of requests that will be made.\n\nThese requests will be directed to a load balancer, responsible for distributing incoming traffic among the servers, optimizing processing. Each server, which shares the same implementation, will have the main responsibilities of establishing communication with external systems (VTEX), accessing the database, and recording logs and monitoring metrics for each execution."
+            },
+            {
+              "type": "images",
+              "data": [
+                {
+                  "title": "",
+                  "url-light": "/projects/integration-gshop/diagram-02-light.svg",
+                  "url-dark": "/projects/integration-gshop/diagram-02-dark.svg",
+                  "alt": "Diagram of Integration Google Shopping project"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "type": "title",
+              "data": "Detailed sequence diagram"
+            },
+            {
+              "type": "description",
+              "data": "The sequence diagram below refers to the first part of the flow, in the communication between the two backends, that is, the service and the crawler. Here, the search for products and whitelabel sellers that exist in VTEX is performed. The sellers are saved in the database and the products are returned in the API.\n\nAfter performing this initial search, the queue is used. This initial return brings with it the list of product IDs divided into groups, that is, a string array. And each group of this (string array) is added to the MGT_PRODUCTS queue."
+            },
+            {
+              "type": "images",
+              "data": [
+                {
+                  "title": "Initial flow",
+                  "url-light": "/projects/integration-gshop/diagram-03-light.svg",
+                  "url-dark": "/projects/integration-gshop/diagram-03-dark.svg",
+                  "alt": "Diagram of Integration Google Shopping project"
+                }
+              ]
+            },
+            {
+              "type": "description",
+              "data": "Below is the sequence diagram for processing the MGT_PRODUCT queue. We can see that there is a loop right at the beginning, in the received argument, in order to, for each product, search for its details (more information) and add a job to another queue, called XML_PRODUCT.\n\nWe can also see that, after finishing the loop, there is an addition of u. job in the MGT_AVAILABILITIES queue."
+            },
+            {
+              "type": "images",
+              "data": [
+                {
+                  "title": "MGT_PRODUCTS | Props: list of string (product id)",
+                  "url-light": "/projects/integration-gshop/diagram-04-light.svg",
+                  "url-dark": "/projects/integration-gshop/diagram-04-dark.svg",
+                  "alt": "Diagram of Integration Google Shopping project"
+                }
+              ]
+            },
+            {
+              "type": "description",
+              "data": "In the queue, whose name is MGT_AVAILABILITIES, there is an implementation that searches for the availability of the products received. Remember: here an array of products is received, and the availability is checked here, using the VTEX simulation API.\n\nAfter searching for the availability of all products, a loop is performed through this list of availabilities in order to add a job for each availability in another queue, called XML_AVAILABILITY."
+            },
+            {
+              "type": "images",
+              "data": [
+                {
+                  "title": "MGT_AVAILABILITIES | Props: list of string (product id)",
+                  "url-light": "/projects/integration-gshop/diagram-05-light.svg",
+                  "url-dark": "/projects/integration-gshop/diagram-05-dark.svg",
+                  "alt": "Diagram of Integration Google Shopping project"
+                }
+              ]
+            },
+            {
+              "type": "description",
+              "data": "And finally, the last two queues to be described. One (the one on the left) is the XML_PRODUCT queue, the other (on the right) is the XML_AVAILABILITY queue. Both have a very similar function: to receive content and write it to an XML file, with the first receiving the product information, and the second receiving the availability of a product."
+            },
+            {
+              "type": "images",
+              "data": [
+                {
+                  "title": "XML_PRODUCT | Props: details of product",
+                  "url-light": "/projects/integration-gshop/diagram-06-light.svg",
+                  "url-dark": "/projects/integration-gshop/diagram-06-dark.svg",
+                  "alt": "Diagram of Integration Google Shopping project"
+                },
+                {
+                  "title": "XML_AVAILABILITY | Props: availability data",
+                  "url-light": "/projects/integration-gshop/diagram-07-light.svg",
+                  "url-dark": "/projects/integration-gshop/diagram-07-dark.svg",
+                  "alt": "Diagram of Integration Google Shopping project"
+                }
+              ]
+            }
+          ]
+        ],
+        "prototype": {}
+      }
     },
     "rave-redesign": {
       "thumb-url": "/images/thumbnail-rave-redesign.png",
@@ -69,16 +356,109 @@
       "title": "Redesign Rave",
       "area": "Watch party APP",
       "type": "Figma redesign",
-      "link": ""
-    },
-    "pay-point": {
-      "thumb-url": "",
-      "thumb-alt": "The PayPoint project thumbnail",
-      "thumb-type": "contain",
-      "title": "PayPoint",
-      "area": "Ecommerce Conversion",
-      "type": "Back-end API",
-      "link": ""
+      "link": "/project/rave-redesign",
+      "details": {
+        "name": "Redesign Rave",
+        "description": "Redesign of a watch party app, to watch content from different platforms, such as Netflix, YouTube and Drive.",
+        "flags": ["Figma", "Redesign", "Mobile App"],
+        "buttons": [
+          {
+            "label": "See Figma",
+            "link": "https://www.figma.com/design/sbxfREsJZqCq4l4qX5X2rh/Rave?node-id=13-1229&t=hHt4dBonqRPJPK9B-1"
+          }
+        ],
+        "empty-buttons-message": "Como esta é uma implementação para uma empresa privada, não haverá exposição do código nem explicação das regras de negócio.",
+        "board": [
+          {
+            "label": "My role",
+            "value": "Designer"
+          },
+          {
+            "label": "Client",
+            "value": "Me (personal)"
+          },
+          {
+            "label": "Delivery",
+            "value": "Redesign figma"
+          },
+          {
+            "label": "Timeline",
+            "value": "1 month"
+          }
+        ],
+        "first-banner-area": ["/projects/redesign-rave/full-banner-01.png"],
+        "emphasized-sentence": "Rave's redesign elevates the virtual experience, creating memories and transforming longing into connection.",
+        "second-banner-area": [
+          "/projects/redesign-rave/mid-banner-02.1.png",
+          "/projects/redesign-rave/mid-banner-02.2.png"
+        ],
+        "third-banner-area": ["/projects/redesign-rave/full-banner-03.png"],
+        "content": [
+          [
+            {
+              "type": "title",
+              "data": "Screen navigation"
+            },
+            {
+              "type": "description",
+              "data": "Thinking about not only updating the screen but also adding new features that would add value, the following modules were designed: Home, Profile, Direct Messages, Notifications, Server List, Creating a New Server and, most importantly, the Server Room."
+            },
+            {
+              "type": "images",
+              "data": [
+                {
+                  "title": "",
+                  "url-light": "/projects/redesign-rave/diagram-01-light.svg",
+                  "url-dark": "/projects/redesign-rave/diagram-01-dark.svg",
+                  "alt": "Diagram of Redesign Rave project"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "type": "title",
+              "data": "Main features"
+            },
+            {
+              "type": "description",
+              "data": "We have designed some features, some of which already exist in the app, but with poor usability, and others that are not actually available within the app. All of them aim to improve interactivity between users and the user experience as a whole."
+            },
+            {
+              "type": "list",
+              "data": [
+                {
+                  "index": "1",
+                  "text": "More objective and simple video and server configuration"
+                },
+                {
+                  "index": "4",
+                  "text": "Viewing information about the server and the content being transmitted"
+                },
+                {
+                  "index": "2",
+                  "text": "Possibility of exchanging direct messages with users"
+                },
+                {
+                  "index": "5",
+                  "text": "Possibility of following users"
+                },
+                {
+                  "index": "3",
+                  "text": "Addition of access log showing the date, time and device"
+                }
+              ]
+            }
+          ]
+        ],
+        "prototype": {
+          "title": "High-fidelity prototype",
+          "description": "Below is a preview of the high fidelity prototype built in Figma. There you can find the desktop and mobile prototypes, as well as some design decisions and a brief color tokenization.",
+          "image": "/projects/redesign-rave/prototypes-01.png",
+          "label": "See figma",
+          "link": "https://www.figma.com/design/sbxfREsJZqCq4l4qX5X2rh/Rave?node-id=13-1229&t=hHt4dBonqRPJPK9B-1"
+        }
+      }
     }
   },
 
@@ -156,5 +536,5 @@
   "about-portfolio-texts-title": "See my work and expertise",
   "about-portfolio-texts-subtitle": "From UI/UX design to API implementation, here I share my\nknowledge and skills in different areas.",
   "about-portfolio-texts-button": "See portfolio",
-  "about-portfolio-texts-button-link": "/protfolio"
+  "about-portfolio-texts-button-link": "/portfolio"
 }

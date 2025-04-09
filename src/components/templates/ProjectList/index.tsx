@@ -16,7 +16,6 @@ function ProjectList({ count }: ProjectListProps) {
     getProjectInformation(t, "crypto-rsa"),
     getProjectInformation(t, "integration-gshop"),
     getProjectInformation(t, "rave-redesign"),
-    getProjectInformation(t, "pay-point"),
   ];
 
   return (

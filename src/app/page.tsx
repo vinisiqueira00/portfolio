@@ -4,7 +4,7 @@ import { PersonalPresentation } from "@/components/organisms/PersonalPresentatio
 
 export default function Home() {
   return (
-    <div className="flex-1 bg-light-gradient-003 dark:bg-dark-gradient-003 pt-20">
+    <div>
       <section className="flex items-center justify-center w-full h-auto max-w-screen-xl mx-auto px-4 py-20 md:py-40">
         <PersonalPresentation />
       </section>

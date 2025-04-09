@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { ProjectThumbs } from "@/components/atoms/ProjectThumbs";
 import { ProjectData } from "@/components/organisms/ProjectData";
 
@@ -13,7 +15,10 @@ interface ProjectContentProps {
 
 function ProjectContent(props: ProjectContentProps) {
   return (
-    <div className="flex flex-col items-stretch justify-start gap-4 w-full h-auto">
+    <Link
+      href={props.link}
+      className="flex flex-col items-stretch justify-start gap-4 w-full h-auto"
+    >
       <ProjectThumbs
         url={props.thumbUrl}
         alt={props.thumbAlt}
@@ -26,7 +31,7 @@ function ProjectContent(props: ProjectContentProps) {
         type={props.type}
         link={props.link}
       />
-    </div>
+    </Link>
   );
 }
 

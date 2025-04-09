@@ -8,7 +8,7 @@ function CallToPortfolioSection() {
   const t = useTranslations();
 
   return (
-    <div className="flex flex-col items-center justify-start gap-12 w-full h-auto py-24 md:py-32">
+    <div className="flex flex-col items-center justify-start gap-12 w-full h-auto">
       <CallToPortfolioThumbGroup
         firstThumb={{
           imageUrl: t("about-portfolio-thumb-01-url"),
