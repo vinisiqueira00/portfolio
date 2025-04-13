@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import { Copyright } from "@/components/atoms/Copyright";
-import { SocialGroup } from "@/components/molecules/SocialGroup";
+import { SocialGroup } from "@/components/atoms/SocialGroup";
 import { ContactForm } from "@/components/molecules/ContactForm";
 import { SectionHeader } from "@/components/molecules/SectionHeader";
 
@@ -18,10 +18,12 @@ function Footer() {
             titleTag="h3"
           />
           <ContactForm />
-          <SocialGroup />
         </div>
 
-        <Copyright text={t("footer-texts-copyright")} />
+        <div className="flex items-center justify-between w-full h-auto">
+          <SocialGroup />
+          <Copyright text={t("footer-texts-copyright")} />
+        </div>
       </div>
     </footer>
   );
