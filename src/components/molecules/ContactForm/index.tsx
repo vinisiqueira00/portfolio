@@ -19,14 +19,13 @@ function ContactForm() {
       createContactSchema({
         fullNameMinError: t("contact-fullName-validation-01"),
         fullNameMaxError: t("contact-fullName-validation-02"),
-        companyNameMinError: t("contact-companyName-validation-01"),
-        companyNameMaxError: t("contact-companyName-validation-01"),
+        companyNameMaxError: t("contact-companyName-validation-02"),
         emailValidateError: t("contact-email-validation-01"),
         phoneValidateError: t("contact-phone-validation-01"),
         subjectMinError: t("contact-subject-validation-01"),
-        subjectMaxError: t("contact-subject-validation-01"),
+        subjectMaxError: t("contact-subject-validation-02"),
         messageMinError: t("contact-message-validation-01"),
-        messageMaxError: t("contact-message-validation-01"),
+        messageMaxError: t("contact-message-validation-02"),
       }),
     [t]
   );

@@ -1,6 +1,18 @@
 import { z } from "zod";
 
-export function createContactSchema(t: Record<string, string>) {
+interface ContactSchemaMessages {
+  fullNameMinError: string;
+  fullNameMaxError: string;
+  companyNameMaxError: string;
+  subjectMinError: string;
+  subjectMaxError: string;
+  messageMinError: string;
+  messageMaxError: string;
+  emailValidateError: string;
+  phoneValidateError: string;
+}
+
+export function createContactSchema(t: ContactSchemaMessages) {
   return z
     .object({
       fullName: z
