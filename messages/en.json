@@ -219,7 +219,7 @@
         "description": "Plan and implement a solution to capture SKUs from the VTEX catalog every day and integrate with Google Shopping.",
         "flags": ["Back-end", "Load Balance", "Queue", "Cron Job"],
         "buttons": [],
-        "empty-buttons-message": "Como esta é uma implementação para uma empresa privada, não haverá exposição do código nem explicação das regras de negócio.",
+        "empty-buttons-message": "Since this is an implementation for a private company, there will be no code exposure or explanation of business rules.",
         "board": [
           {
             "label": "My role",
@@ -541,7 +541,7 @@
   "about-personal-facts-image-url": "/images/me-03.png",
   "about-personal-facts-image-alt": "Vini Siqueira speaking at a community event",
   "about-personal-facts-texts-title": "Some personal facts about me",
-  "about-personal-facts-texts-body": "I have been married for 1 year to a wonderful woman and the mother of my future children - She is my priority in life!\n\nI am a Protestant Christian, professing the Baptist doctrine as the most faithful to what I understand from the Scriptures.\n\nI am a car enthusiast, although I do not know much about mechanics.\n\nMy favorite style of music is RAP, and I really enjoy watching freestyle battles - I follow the national scene assiduously.",
+  "about-personal-facts-texts-body": "I’ve been married for a year to an extraordinary woman — a faithful companion and the future mother of our children. She is my top priority, God’s greatest gift in my life, and an essential part of my journey. We share faith, values, and the desire to build a strong family.\n\nI’m a Protestant Christian and strive to live a life aligned with biblical principles. I identify with the Baptist doctrine, as I believe it to be a faithful interpretation of the Scriptures. My faith guides my decisions and serves as the foundation upon which I build my life.\n\nI’m passionate about cars and have always been fascinated by the automotive world. I appreciate the design, engineering, and history behind each vehicle. While I don’t have deep technical knowledge, I truly admire the innovation and evolution within the industry.\n\nRAP music has a strong influence on me, especially for its raw, honest, and socially conscious messages. I closely follow freestyle battles, particularly in the Brazilian scene. I value the creativity, technique, and powerful expression that this art form demands.",
   "about-portfolio-thumb-01-url": "/images/thumbnail-crypto-rsa.png",
   "about-portfolio-thumb-01-alt": "Crypto RSA Thumbnail",
   "about-portfolio-thumb-02-url": "/images/thumbnail-integration-gshop.png",
