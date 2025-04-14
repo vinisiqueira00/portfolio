@@ -49,8 +49,7 @@ function ContactForm() {
   async function onSubmit(data: ContactFormData) {
     try {
       const response = await fetch(
-        "http://localhost:3001/contact",
-        // "https://portfolio-backend-cmoh.onrender.com/contact",
+        `${process.env.NEXT_PUBLIC_API_URL}/contact`,
         {
           method: "POST",
           headers: {
