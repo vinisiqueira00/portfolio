@@ -7,7 +7,7 @@ function PersonalFactsSection() {
   const t = useTranslations();
 
   return (
-    <div className="flex flex-col items-center justify-center gap-12 w-full h-auto md:flex-row">
+    <div className="flex flex-col items-stretch justify-center gap-12 w-full h-auto md:flex-row">
       <PersonalFactsImage
         imageUrl={t("about-personal-facts-image-url")}
         imageAlt={t("about-personal-facts-image-alt")}
