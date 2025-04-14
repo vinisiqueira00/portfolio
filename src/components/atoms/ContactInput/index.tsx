@@ -1,9 +1,12 @@
+import { MaskedInput, createDefaultMaskGenerator } from "react-hook-mask";
+
 import {
   Control,
   Controller,
   FieldError,
   Path,
   UseFormRegisterReturn,
+  useWatch,
 } from "react-hook-form";
 
 import {
@@ -38,6 +41,8 @@ type ContactInputProps = (ContactInputTypeProps | ContactInputOthersProps) & {
   placeholder: string;
 };
 
+const maskGenerator = createDefaultMaskGenerator("(99) 99999-9999");
+
 function ContactInput(props: ContactInputProps) {
   if (props.type === "MESSAGE") {
     return (
@@ -65,6 +70,12 @@ function ContactInput(props: ContactInputProps) {
   }
 
   if (props.type === "CONTACT") {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const selectedContactType = useWatch({
+      control: props.control,
+      name: props.nameSelect,
+    });
+
     return (
       <fieldset className="relative flex w-full h-14 min-h-14 max-h-14 bg-transparent border-none">
         <Controller
@@ -82,12 +93,30 @@ function ContactInput(props: ContactInputProps) {
             </Select>
           )}
         />
-        <input
-          type="text"
-          className="w-full h-full p-4 font-normal text-base text-light-neutral-900 dark:text-dark-neutral-900 bg-transparent rounded-e-2xl border border-l-0 border-light-neutral-500 dark:border-dark-neutral-500 overflow-hidden placeholder-light-neutral-600 dark:placeholder-dark-neutral-600 outline-none select-none"
-          placeholder={props.placeholder}
-          {...props.registerInput}
-        />
+
+        {selectedContactType === "email" ? (
+          <input
+            type="text"
+            className="w-full h-full p-4 font-normal text-base text-light-neutral-900 dark:text-dark-neutral-900 bg-transparent rounded-e-2xl border border-l-0 border-light-neutral-500 dark:border-dark-neutral-500 overflow-hidden placeholder-light-neutral-600 dark:placeholder-dark-neutral-600 outline-none select-none"
+            placeholder={props.placeholder}
+            {...props.registerInput}
+          />
+        ) : (
+          <Controller
+            name="phone"
+            control={props.control}
+            render={({ field }) => (
+              <MaskedInput
+                className="w-full h-full p-4 font-normal text-base text-light-neutral-900 dark:text-dark-neutral-900 bg-transparent rounded-e-2xl border border-l-0 border-light-neutral-500 dark:border-dark-neutral-500 overflow-hidden placeholder-light-neutral-600 dark:placeholder-dark-neutral-600 outline-none select-none"
+                value={field.value ?? ""}
+                onChange={field.onChange}
+                maskGenerator={maskGenerator}
+                placeholder={props.placeholder}
+              />
+            )}
+          />
+        )}
+
         {props.error && (
           <TooltipProvider>
             <Tooltip>
