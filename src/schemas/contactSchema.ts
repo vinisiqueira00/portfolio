@@ -1,59 +1,43 @@
 import { z } from "zod";
 
-const errorMessages = {
-  fullNameMinError: "Nome completo deve ter no mínimo 5 caracteres",
-  fullNameMaxError: "Nome completo deve ter no máximo 30 caracteres",
-  companyNameMinError: "Nome da empresa deve ter no mínimo 2 caracteres",
-  companyNameMaxError: "Nome da empresa deve ter no máximo 100 caracteres",
-  emailValidateError: "Email inválido",
-  phoneValidateError: "Telefone inválido",
-  subjectMinError: "Assunto deve ter no mínimo 5 caracteres",
-  subjectMaxError: "Assunto deve ter no máximo 25 caracteres",
-  messageMinError: "Mensagem deve ter no mínimo 5 caracteres",
-  messageMaxError: "Mensagem deve ter no máximo 250 caracteres",
-};
+export function createContactSchema(t: Record<string, string>) {
+  return z
+    .object({
+      fullName: z
+        .string()
+        .min(5, t.fullNameMinError)
+        .max(30, t.fullNameMaxError),
+      companyName: z
+        .string()
+        .min(2, t.companyNameMinError)
+        .max(100, t.companyNameMaxError),
+      preferredContact: z.enum(["email", "phone"]),
+      email: z.string().optional(),
+      phone: z.string().optional(),
+      subject: z.string().min(5, t.subjectMinError).max(25, t.subjectMaxError),
+      message: z.string().min(5, t.messageMinError).max(250, t.messageMaxError),
+    })
+    .superRefine((data, ctx) => {
+      if (data.preferredContact === "email") {
+        if (!data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+          ctx.addIssue({
+            path: ["email"],
+            code: z.ZodIssueCode.custom,
+            message: t.emailValidateError,
+          });
+        }
+      }
 
-export const contactSchema = z
-  .object({
-    fullName: z
-      .string()
-      .min(5, errorMessages.fullNameMinError)
-      .max(30, errorMessages.fullNameMaxError),
-    companyName: z
-      .string()
-      .min(2, errorMessages.fullNameMinError)
-      .max(100, errorMessages.fullNameMaxError),
-    email: z
-      .string()
-      .email(errorMessages.emailValidateError)
-      .optional()
-      .or(z.literal("")),
-    phone: z
-      .string()
-      .regex(/^\(\d{2}\) \d{4,5}-\d{4}$/, errorMessages.phoneValidateError)
-      .optional()
-      .or(z.literal("")),
+      if (data.preferredContact === "phone") {
+        if (!data.phone || !/^\(\d{2}\) \d{4,5}-\d{4}$/.test(data.phone)) {
+          ctx.addIssue({
+            path: ["phone"],
+            code: z.ZodIssueCode.custom,
+            message: t.phoneValidateError,
+          });
+        }
+      }
+    });
+}
 
-    subject: z
-      .string()
-      .min(5, errorMessages.subjectMinError)
-      .max(25, errorMessages.subjectMaxError),
-
-    message: z
-      .string()
-      .min(5, errorMessages.messageMinError)
-      .max(250, errorMessages.messageMaxError),
-
-    preferredContact: z.enum(["email", "phone"]),
-  })
-  .refine(
-    (data) =>
-      (data.preferredContact === "email" && data.email) ||
-      (data.preferredContact === "phone" && data.phone),
-    {
-      message: "Informe um contato válido conforme a preferência",
-      path: ["email"], // Aponta o erro para email, mas pode ajustar para 'phone'
-    }
-  );
-
-export type ContactFormData = z.infer<typeof contactSchema>;
+export type ContactFormData = z.infer<ReturnType<typeof createContactSchema>>;

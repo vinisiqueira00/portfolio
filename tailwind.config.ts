@@ -51,6 +51,9 @@ export default {
         "dark-status-alert/20": "rgba(251, 188, 5, 0.2)",
         "light-status-alert/20": "rgba(251, 188, 5, 0.2)",
 
+        "dark-status-error": "#FB0505",
+        "light-status-error": "#FB0505",
+
         "dark-neutral-000": "#000000",
         "light-neutral-000": "#FFFFFF",
 
@@ -145,7 +148,11 @@ export default {
         "shadow-01": "0 0 3rem 0 rgba(0, 0, 0, 0.1)",
         "shadow-02": "0 0 1rem 0 rgba(0, 0, 0, 0.1)",
       },
+      width: {
+        "5.5": "1.375rem",
+      },
       height: {
+        "5.5": "1.375rem",
         "1k": "1000px",
         "1.5k": "1500px",
         "2k": "2000px",

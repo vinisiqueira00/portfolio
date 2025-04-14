@@ -5,7 +5,7 @@ function SocialGroup() {
   const t = useTranslations("");
 
   return (
-    <div className="flex items-center justify-start gap-4">
+    <div className="flex items-center justify-center gap-4 md:justify-start">
       <span className="font-heading text-left text-base leading-normal font-medium text-light-neutral-900 dark:text-dark-neutral-900">
         {t("social-title")}
       </span>
