@@ -7,10 +7,7 @@ export function createContactSchema(t: Record<string, string>) {
         .string()
         .min(5, t.fullNameMinError)
         .max(30, t.fullNameMaxError),
-      companyName: z
-        .string()
-        .min(2, t.companyNameMinError)
-        .max(100, t.companyNameMaxError),
+      companyName: z.string().max(100, t.companyNameMaxError).optional(),
       preferredContact: z.enum(["email", "phone"]),
       email: z.string().optional(),
       phone: z.string().optional(),
