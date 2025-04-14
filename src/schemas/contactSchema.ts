@@ -38,7 +38,7 @@ export function createContactSchema(t: ContactSchemaMessages) {
       }
 
       if (data.preferredContact === "phone") {
-        if (!data.phone || !/^\(\d{2}\) \d{4,5}-\d{4}$/.test(data.phone)) {
+        if (!data.phone || !/^\d{11}$/.test(data.phone)) {
           ctx.addIssue({
             path: ["phone"],
             code: z.ZodIssueCode.custom,
