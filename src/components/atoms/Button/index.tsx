@@ -5,7 +5,7 @@ import Link from "next/link";
 interface SubmitButtonProps {
   label: string;
   type: "primary" | "secondary";
-  onClick: () => void;
+  onClick?: () => void;
   isLoading?: boolean;
 }
 
@@ -48,7 +48,7 @@ function Button(props: SubmitButtonProps | LinkButtonProps) {
   if ("onClick" in props && !("link" in props)) {
     return (
       <button
-        onClick={() => props.onClick()}
+        onClick={() => props.onClick?.()}
         data-type={props.type}
         aria-label={props.label}
         className="group flex items-center justify-center w-auto h-14 px-6 rounded-2xl leading-normal text-base font-normal data-[type=primary]:text-light-neutral-000 data-[type=primary]:dark:text-dark-neutral-000 data-[type=secondary]:text-light-neutral-900 data-[type=secondary]:dark:text-dark-neutral-900 data-[type=primary]:bg-light-gradient-004 dark:data-[type=primary]:bg-dark-gradient-004 data-[type=secondary]:bg-transparent data-[type=secondary]:border data-[type=secondary]:border-light-neutral-400 dark:data-[type=secondary]:border-dark-neutral-400"
