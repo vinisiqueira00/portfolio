@@ -3,7 +3,7 @@ import Image from "next/image";
 interface ProjectDetailsContentSubjectImagesProps {
   images: {
     title: string;
-    url: string;
+    source: string;
     alt: string;
   }[];
 }
@@ -15,7 +15,7 @@ export function ProjectDetailsContentSubjectImages(
     <div className="flex flex-col items-start justify-center gap-8 w-full h-auto md:flex-row">
       {props.images.map((image) => (
         <div
-          key={image.url}
+          key={image.source}
           className="flex flex-col items-stretch justify-start gap-0 w-full h-auto rounded-4xl border border-light-neutral-400 dark:border-dark-neutral-400 bg-light-gradient-002 dark:bg-dark-gradient-002"
         >
           {image.title && (
@@ -25,12 +25,12 @@ export function ProjectDetailsContentSubjectImages(
           )}
 
           <div
-            key={image.url}
+            key={image.source}
             className="flex items-center justify-center w-full h-auto p-6 md:p-16"
           >
             <Image
               className="object-contain"
-              src={image.url}
+              src={image.source}
               alt={image.alt}
               width={768}
               height={768}

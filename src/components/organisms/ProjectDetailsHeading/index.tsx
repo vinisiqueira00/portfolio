@@ -10,18 +10,18 @@ interface ProjectDetailsHeadingProps {
 }
 
 export function ProjectDetailsHeading(props: ProjectDetailsHeadingProps) {
-  const t = useTranslations(`projects.${props.projectSlug}.details`);
+  const t = useTranslations(`projects.${props.projectSlug}`);
 
   return (
     <section className="flex items-center justify-center w-full h-auto">
       <div className="flex flex-col items-stretch justify-center w-full h-auto gap-12 md:flex-row">
         <div className="flex-1 flex flex-col w-auto h-auto gap-4">
-          <ProjectDetailsName name={t("name")} />
+          <ProjectDetailsName name={t("title")} />
           <ProjectDetailsDescription text={t("description")} />
           <ProjectDetailsFlags flags={t.raw("flags")} />
           <ProjectDetailsButtons
             buttons={t.raw("buttons")}
-            messageEmptyButton={t("empty-buttons-message")}
+            warning={t("warning")}
           />
         </div>
 

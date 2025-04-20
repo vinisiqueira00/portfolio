@@ -6,36 +6,36 @@ import { OccupationCurrent } from "@/components/atoms/OccupationCurrent";
 import { Button } from "@/components/atoms/Button";
 
 function ContentPresentation() {
-  const t = useTranslations();
+  const t = useTranslations("home-page.presentation");
 
   return (
     <div className="flex flex-col items-stretch justify-center gap-6 w-full md:w-auto md:flex-1 md:max-w-[28rem]">
       <div className="flex flex-col items-stretch justify-center">
-        <PresentationTitle text={t("presentation-texts-title")} />
+        <PresentationTitle text={t("title")} />
       </div>
 
       <div className="flex flex-col items-stretch justify-center gap-1">
         <OccupationCurrent
-          label={t("presentation-texts-occupation-before")}
-          value={t("presentation-texts-occupation-after")}
-          link={t("presentation-texts-occupation-after-link")}
+          label={t("occupation.text")}
+          value={t("occupation.link.label")}
+          link={t("occupation.link.link")}
         />
         <OccupationDegree
-          label={t("presentation-texts-academy-before")}
-          value={t("presentation-texts-academy-after")}
-          link={t("presentation-texts-academy-after-link")}
+          label={t("academy.text")}
+          value={t("academy.link.label")}
+          link={t("academy.link.link")}
         />
       </div>
 
       <div className="flex flex-col items-stretch justify-start gap-2 md:flex-row md:items-center md:gap-6">
         <Button
-          label={t("presentation-buttons-01-label")}
-          link={t("presentation-buttons-01-link")}
+          label={t("buttons.contact.label")}
+          link={t("buttons.contact.link")}
           type="primary"
         />
         <Button
-          label={t("presentation-buttons-02-label")}
-          link={t("presentation-buttons-02-link")}
+          label={t("buttons.portfolio.label")}
+          link={t("buttons.portfolio.label")}
           type="secondary"
         />
       </div>

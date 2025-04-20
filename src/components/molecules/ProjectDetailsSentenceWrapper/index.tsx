@@ -9,7 +9,7 @@ interface ProjectDetailsSentenceWrapperProps {
 export function ProjectDetailsSentenceWrapper(
   props: ProjectDetailsSentenceWrapperProps
 ) {
-  const t = useTranslations(`projects.${props.projectSlug}.details`);
+  const t = useTranslations(`projects.${props.projectSlug}`);
 
   const sentence = t(`emphasized-sentence`).trim();
 

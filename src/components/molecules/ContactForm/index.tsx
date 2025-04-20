@@ -12,20 +12,20 @@ import { useEffect, useMemo } from "react";
 
 function ContactForm() {
   const locale = useLocale();
-  const t = useTranslations("");
+  const t = useTranslations("footer.contact.form");
 
   const contactSchema = useMemo(
     () =>
       createContactSchema({
-        fullNameMinError: t("contact-fullName-validation-01"),
-        fullNameMaxError: t("contact-fullName-validation-02"),
-        companyNameMaxError: t("contact-companyName-validation-02"),
-        emailValidateError: t("contact-email-validation-01"),
-        phoneValidateError: t("contact-phone-validation-01"),
-        subjectMinError: t("contact-subject-validation-01"),
-        subjectMaxError: t("contact-subject-validation-02"),
-        messageMinError: t("contact-message-validation-01"),
-        messageMaxError: t("contact-message-validation-02"),
+        fullNameMinError: t("full-name.errors.min-character"),
+        fullNameMaxError: t("full-name.errors.max-character"),
+        companyNameMaxError: t("company-name.errors.max-character"),
+        emailValidateError: t("email.errors.format"),
+        phoneValidateError: t("phone.errors.format"),
+        subjectMinError: t("subject.errors.min-character"),
+        subjectMaxError: t("subject.errors.max-character"),
+        messageMinError: t("message.errors.min-character"),
+        messageMaxError: t("message.errors.max-character"),
       }),
     [t]
   );
@@ -87,13 +87,13 @@ function ContactForm() {
         <div className="flex-1 flex flex-col items-stretch justify-start gap-4 w-auto h-auto">
           <ContactInput
             type="TEXT"
-            placeholder={t("contact-fullName-placeholder")}
+            placeholder={t("full-name.placeholder")}
             registerInput={register("fullName")}
             error={errors.fullName}
           />
           <ContactInput
             type="TEXT"
-            placeholder={t("contact-companyName-placeholder")}
+            placeholder={t("company-name.placeholder")}
             registerInput={register("companyName")}
             error={errors.companyName}
           />
@@ -101,8 +101,8 @@ function ContactForm() {
             type="CONTACT"
             placeholder={
               preferredContact === "email"
-                ? t("contact-email-placeholder")
-                : t("contact-phone-placeholder")
+                ? t("email.placeholder")
+                : t("phone.placeholder")
             }
             nameSelect={"preferredContact"}
             registerInput={
@@ -117,13 +117,13 @@ function ContactForm() {
         <div className="flex-1 flex flex-col items-stretch justify-start gap-4 w-auto h-auto">
           <ContactInput
             type="TEXT"
-            placeholder={t("contact-subject-placeholder")}
+            placeholder={t("subject.placeholder")}
             registerInput={register("subject")}
             error={errors.subject}
           />
           <ContactInput
             type="MESSAGE"
-            placeholder={t("contact-message-placeholder")}
+            placeholder={t("message.placeholder")}
             registerInput={register("message")}
             error={errors.message}
           />
@@ -133,7 +133,7 @@ function ContactForm() {
       <div className="flex flex-col items-stretch justify-center w-full h-auto md:w-auto md:items-center">
         <Button
           isLoading={isSubmitting}
-          label={t("contact-button-submit")}
+          label={t("submit-button.label")}
           type="primary"
           onClick={() => {}}
         />

@@ -14,8 +14,8 @@ function ProjectList({ count }: ProjectListProps) {
 
   const projects = [
     getProjectInformation(t, "crypto-rsa"),
-    getProjectInformation(t, "integration-gshop"),
-    getProjectInformation(t, "rave-redesign"),
+    getProjectInformation(t, "gshop-integration"),
+    getProjectInformation(t, "redesign-rave"),
   ];
 
   return (
@@ -23,7 +23,7 @@ function ProjectList({ count }: ProjectListProps) {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {(count === "all" ? projects : projects.slice(0, count)).map(
           (project) => (
-            <ProjectContent key={project.name} {...project} />
+            <ProjectContent key={project.title} {...project} />
           )
         )}
       </div>
@@ -31,9 +31,9 @@ function ProjectList({ count }: ProjectListProps) {
       {count !== "all" && (
         <div className="flex items-center justify-center w-full h-auto">
           <Button
-            label={t("projects-button-label")}
+            label={t("home-page.portfolio-button.label")}
+            link={t("home-page.portfolio-button.link")}
             type="secondary"
-            link={t("projects-button-link")}
           />
         </div>
       )}

@@ -5,7 +5,6 @@ interface ProjectDataProps {
   name: string;
   area: string;
   type: string;
-  link: string;
 }
 
 function ProjectData(props: ProjectDataProps) {
