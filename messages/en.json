@@ -31,6 +31,7 @@
       "subtitle": "Want to talk more? Hit me up below to set up a call I'm looking forward to connecting.",
       "form": {
         "full-name": {
+          "label": "Full name",
           "placeholder": "Full name",
           "errors": {
             "min-character": "Minimum 5 characters",
@@ -38,24 +39,28 @@
           }
         },
         "company-name": {
+          "label": "Company name",
           "placeholder": "Company name (optional)",
           "errors": {
             "max-character": "Maximum 100 characters"
           }
         },
         "email": {
+          "label": "Email",
           "placeholder": "Email for contact",
           "errors": {
             "format": "Invalid email format"
           }
         },
         "phone": {
+          "label": "Phone",
           "placeholder": "Phone for contact",
           "errors": {
             "format": "Invalid phone format"
           }
         },
         "subject": {
+          "label": "Subject",
           "placeholder": "Subject",
           "errors": {
             "min-character": "Minimum 5 characters",
@@ -63,6 +68,7 @@
           }
         },
         "message": {
+          "label": "Message",
           "placeholder": "Your message",
           "errors": {
             "min-character": "Minimum 5 characters",
@@ -361,11 +367,11 @@
         [
           {
             "type": "title",
-            "data": "Diagrama de system design"
+            "data": "System design diagram"
           },
           {
             "type": "description",
-            "data": "Este diagrama ilustra a arquitetura proposta para a solução. Embora alguns componentes já estejam implementados, outros estão em fase de planejamento e devem ser implementados no futuro.\n\nInicialmente, o fluxo será orquestrado por um script de inicialização. Em sua versão atual, esse script se comunica diretamente com o servidor para obter os dados iniciais necessários. No entanto, uma fila será então utilizada para processar de forma eficiente um grande volume de requisições que serão feitas.\n\nEssas requisições serão direcionadas a um balanceador de carga, responsável por distribuir o tráfego de entrada entre os servidores, otimizando o processamento. Cada servidor, que compartilha a mesma implementação, terá como principais responsabilidades estabelecer comunicação com sistemas externos (VTEX), acessar o banco de dados e registrar logs e métricas de monitoramento de cada execução."
+            "data": "This diagram illustrates the proposed architecture for the solution. Although some components are already implemented, others are in the planning phase and are expected to be implemented in the future.\n\nInitially, the flow will be orchestrated by an initialization script. In its current version, this script communicates directly with the server to obtain the necessary initial data. However, a queue will then be used to efficiently process a large volume of requests that will be made.\n\nThese requests will be directed to a load balancer, responsible for distributing incoming traffic among the servers, optimizing processing. Each server, which shares the same implementation, will have the main responsibilities of establishing communication with external systems (VTEX), accessing the database, and recording logs and monitoring metrics for each execution."
           },
           {
             "type": "images",
@@ -374,7 +380,7 @@
                 "title": "",
                 "source-light": "/projects/integration-gshop/diagram-02-light.svg",
                 "source-dark": "/projects/integration-gshop/diagram-02-dark.svg",
-                "alt": "Diagrama do projeto de integração do Google Shopping"
+                "alt": "Diagram of Integration Google Shopping project"
               }
             ]
           }
@@ -407,7 +413,7 @@
             "type": "images",
             "data": [
               {
-                "title": "MGT_PRODUCTS | Props: list of string (product id)",
+                "title": "MGT_PRODUCTS - List of product ID",
                 "source-light": "/projects/integration-gshop/diagram-04-light.svg",
                 "source-dark": "/projects/integration-gshop/diagram-04-dark.svg",
                 "alt": "Diagram of GShop Integration project"
@@ -422,7 +428,7 @@
             "type": "images",
             "data": [
               {
-                "title": "MGT_AVAILABILITIES | Props: list of string (product id)",
+                "title": "MGT_AVAILABILITIES - List of product ID",
                 "source-light": "/projects/integration-gshop/diagram-05-light.svg",
                 "source-dark": "/projects/integration-gshop/diagram-05-dark.svg",
                 "alt": "Diagram of GShop Integration project"
@@ -437,13 +443,13 @@
             "type": "images",
             "data": [
               {
-                "title": "XML_PRODUCT | Props: details of product",
+                "title": "XML_PRODUCT - Details of product",
                 "source-light": "/projects/integration-gshop/diagram-06-light.svg",
                 "source-dark": "/projects/integration-gshop/diagram-06-dark.svg",
                 "alt": "Diagram of GShop Integration project"
               },
               {
-                "title": "XML_AVAILABILITY | Props: availability data",
+                "title": "XML_AVAILABILITY - Availability data",
                 "source-light": "/projects/integration-gshop/diagram-07-light.svg",
                 "source-dark": "/projects/integration-gshop/diagram-07-dark.svg",
                 "alt": "Diagram of GShop Integration project"

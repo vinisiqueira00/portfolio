@@ -35,7 +35,7 @@ function ContentPresentation() {
         />
         <Button
           label={t("buttons.portfolio.label")}
-          link={t("buttons.portfolio.label")}
+          link={t("buttons.portfolio.link")}
           type="secondary"
         />
       </div>

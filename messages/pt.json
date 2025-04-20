@@ -31,6 +31,7 @@
       "subtitle": "Quer conversar mais? Me mande uma mensagem abaixo. Estou ansioso para conversarmos.",
       "form": {
         "full-name": {
+          "label": "Nome completo",
           "placeholder": "Nome completo",
           "errors": {
             "min-character": "Mínimo de 5 caracteres",
@@ -38,24 +39,28 @@
           }
         },
         "company-name": {
+          "label": "Nome da empresa",
           "placeholder": "Nome da empresa (opcional)",
           "errors": {
             "max-character": "Máximo de 100 caracteres"
           }
         },
         "email": {
+          "label": "Email",
           "placeholder": "Email para contato",
           "errors": {
             "format": "Formato de email inválido"
           }
         },
         "phone": {
+          "label": "Celular",
           "placeholder": "Número para contato",
           "errors": {
             "format": "Formato do número inválido"
           }
         },
         "subject": {
+          "label": "Assunto",
           "placeholder": "Assunto",
           "errors": {
             "min-character": "Mínimo de 5 caracteres",
@@ -63,6 +68,7 @@
           }
         },
         "message": {
+          "label": "Mensagem",
           "placeholder": "Sua mensagem",
           "errors": {
             "min-character": "Mínimo de 5 caracteres",
@@ -407,7 +413,7 @@
             "type": "images",
             "data": [
               {
-                "title": "MGT_PRODUCTS - List de ID de produto",
+                "title": "MGT_PRODUCTS - Lista de ID de produto",
                 "source-light": "/projects/integration-gshop/diagram-04-light.svg",
                 "source-dark": "/projects/integration-gshop/diagram-04-dark.svg",
                 "alt": "Diagrama do projeto de integração do Google Shopping"

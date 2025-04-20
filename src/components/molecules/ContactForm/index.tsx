@@ -111,6 +111,8 @@ function ContactForm() {
                 : register("phone")
             }
             control={control}
+            labelEmail={t("email.label")}
+            labelPhone={t("phone.label")}
             error={preferredContact === "email" ? errors.email : errors.phone}
           />
         </div>
