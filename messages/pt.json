@@ -1,554 +1,764 @@
 {
-  "header-logotype-firstname": "Vini",
-  "header-logotype-lastname": "Siqueira",
-
-  "navbar-item-01-label": "Inicio",
-  "navbar-item-01-link": "/",
-  "navbar-item-02-label": "Portfólio",
-  "navbar-item-02-link": "/portfolio",
-  "navbar-item-03-label": "Sobre",
-  "navbar-item-03-link": "/about",
-  "navbar-item-04-label": "Curriculo",
-  "navbar-item-04-link": "/files/resume-pt-br.pdf",
-  "navbar-item-04-name": "curriculo-do-vinicius-siqueira.pdf",
-
-  "footer-texts-title": "Vamos construir algo juntos",
-  "footer-texts-subtitle": "Quer conversar mais? Me mande uma mensagem abaixo. Estou ansioso para conversarmos.",
-  "footer-texts-copyright": "© 2025 Vinícius Siqueira. Todos os direitos reservados.",
-
-  "contact-fullName-placeholder": "Nome completo",
-  "contact-fullName-validation-01": "Mínimo de 5 caracteres",
-  "contact-fullName-validation-02": "Máximo de 30 caracteres",
-  "contact-companyName-placeholder": "Nome da empresa (opcional)",
-  "contact-companyName-validation-01": "Mínimo de 2 caracteres",
-  "contact-companyName-validation-02": "Máximo de 100 caracteres",
-  "contact-email-placeholder": "Email para contato",
-  "contact-email-validation-01": "Formato de email inválido",
-  "contact-phone-placeholder": "Celular para contato",
-  "contact-phone-validation-01": "Formato de celular inválido",
-  "contact-subject-placeholder": "Assunto",
-  "contact-subject-validation-01": "Mínimo de 5 caracteres",
-  "contact-subject-validation-02": "Máximo de 25 caracteres",
-  "contact-message-placeholder": "Sua mensagem",
-  "contact-message-validation-01": "Mínimo de 5 caracteres",
-  "contact-message-validation-02": "Máximo de 250 caracteres",
-  "contact-button-submit": "Enviar mesagem",
-
-  "social-title": "Me siga",
-  "social-01-label": "LinkedIn",
-  "social-01-link": "https://www.linkedin.com/in/vinisiqueira00",
-  "social-02-label": "GitHub",
-  "social-02-link": "https://github.com/vinisiqueira00",
-  "social-03-label": "Instagram",
-  "social-03-link": "https://www.instagram.com/vinisiqueira00",
-
-  "presentation-texts-contact": "Disponivel para contato",
-  "presentation-texts-location": "São Paulo, Brasil",
-  "presentation-texts-title": "Criando soluções que\ntransformam negócios e\nentregam resultados tangíveis.",
-  "presentation-texts-occupation-before": "Full-stack sênior na",
-  "presentation-texts-occupation-after": "Cadastra",
-  "presentation-texts-occupation-after-link": "https://cadastra.com/",
-  "presentation-texts-academy-before": "Formado pelo",
-  "presentation-texts-academy-after": "Cefet/RJ",
-  "presentation-texts-academy-after-link": "https://www.cefet-rj.br/",
-  "presentation-buttons-01-label": "Entrar em contato",
-  "presentation-buttons-01-link": "#contact",
-  "presentation-buttons-02-label": "Ver portfólio",
-  "presentation-buttons-02-link": "/portfolio",
-
-  "projects-button-label": "Ver portfólio",
-  "projects-button-link": "/portfolio",
-  "projects": {
-    "crypto-rsa": {
-      "thumb-url": "/images/thumbnail-crypto-rsa.png",
-      "thumb-alt": "A imagem de capa do projeto Crypto RSA",
-      "thumb-type": "contain",
-      "title": "CryptoRSA",
-      "area": "Criptografia",
-      "type": "Full-stack web",
-      "link": "/project/crypto-rsa",
-      "details": {
-        "name": "Crypto RSA",
-        "description": "Um projeto completo, que trabalha com conceitos avançados, desde design até criptografia RSA.",
-        "flags": [
-          "Figma",
-          "NextJS",
-          "Tailwind",
-          "NodeJS",
-          "Express",
-          "Typescript"
-        ],
-        "buttons": [
-          {
-            "label": "Ver projeto",
-            "link": "https://cryptorsa.vinisiqueira.com.br"
-          },
-          {
-            "label": "Ver código",
-            "link": "https://github.com/vinisiqueira00/crypto-rsa-backend"
-          }
-        ],
-        "empty-buttons-message": "Como esta é uma implementação para uma empresa privada, não haverá exposição do código nem explicação das regras de negócio.",
-        "board": [
-          {
-            "label": "Função",
-            "value": "Designer e desenvolvedor"
-          },
-          {
-            "label": "Cliente",
-            "value": "Professor (faculdade)"
-          },
-          {
-            "label": "Entrega",
-            "value": "plataforma Web"
-          },
-          {
-            "label": "Tempo",
-            "value": "2 meses"
-          }
-        ],
-        "first-banner-area": ["/projects/crypto-rsa/full-banner-01.png"],
-        "emphasized-sentence": "Crypto RSA é uma plataforma de criptografia rápida e otimizada que prioriza a segurança do algoritmo RSA personalizado.",
-        "second-banner-area": [
-          "/projects/crypto-rsa/mid-banner-02.1.png",
-          "/projects/crypto-rsa/mid-banner-02.2.png"
-        ],
-        "third-banner-area": ["/projects/crypto-rsa/full-banner-03.png"],
-        "content": [
-          [
-            {
-              "type": "title",
-              "data": "Navegação na tela"
-            },
-            {
-              "type": "description",
-              "data": "Por ser uma aplicação cujo foco era justamente ser bem simples e fácil de usar, optamos por implementar apenas 3 páginas, onde todas as páginas acessam todas as páginas."
-            },
-            {
-              "type": "images",
-              "data": [
-                {
-                  "title": "",
-                  "url-light": "/projects/crypto-rsa/diagram-01-light.svg",
-                  "url-dark": "/projects/crypto-rsa/diagram-01-dark.svg",
-                  "alt": "Diagrama do projeto Crypto RSA"
-                }
-              ]
-            }
-          ],
-          [
-            {
-              "type": "title",
-              "data": "Fluxo de solicitação"
-            },
-            {
-              "type": "description",
-              "data": "Para ser objetivo, haverá apenas 3 endpoints implementados na API REST, e cada um será atendido por uma das páginas."
-            },
-            {
-              "type": "images",
-              "data": [
-                {
-                  "title": "",
-                  "url-light": "/projects/crypto-rsa/diagram-02-light.svg",
-                  "url-dark": "/projects/crypto-rsa/diagram-02-dark.svg",
-                  "alt": "Diagrama do projeto Crypto RSA"
-                }
-              ]
-            }
-          ],
-          [
-            {
-              "type": "title",
-              "data": "Meta de entrega"
-            },
-            {
-              "type": "description",
-              "data": "Uma plataforma web capaz de criptografar e descriptografar o conteúdo de um arquivo txt, cuja criptografia RSA é personalizada, ou seja, sem usar uma biblioteca externa. Deve entregar uma interface que tenha uma abordagem simples e seja atrativa."
-            },
-            {
-              "type": "list",
-              "data": [
-                {
-                  "index": "1",
-                  "text": "O remetente deve inserir um arquivo TXT com a mensagem"
-                },
-                {
-                  "index": "4",
-                  "text": "O destinatário deve inserir o arquivo TXT criptografado"
-                },
-                {
-                  "index": "2",
-                  "text": "O remetente deve informar a chave RSA pública"
-                },
-                {
-                  "index": "5",
-                  "text": "O destinatário deve informar a chave RSA privada"
-                },
-                {
-                  "index": "3",
-                  "text": "O remetente receberá o arquivo TXT criptografado"
-                },
-                {
-                  "index": "6",
-                  "text": "O destinatário receberá o arquivo TXT descriptografado"
-                }
-              ]
-            }
-          ]
-        ],
-        "prototype": {
-          "title": "Protótipo de alta fidelidade",
-          "description": "Abaixo está uma prévia do protótipo de alta fidelidade construído no Figma. Lá você pode encontrar os protótipos para desktop e mobile, bem como algumas decisões de design e uma breve tokenização de cores.",
-          "image": "/projects/crypto-rsa/prototypes-01.png",
-          "label": "Ver figma",
-          "link": "https://www.figma.com/design/rMwhr1u5ep9D6wj1INLQ5H/CryptoRSA?node-id=0-1&t=mcgurmsOTpAuAz1I-1"
-        }
-      }
+  "header": {
+    "logotype": {
+      "source": "/logotypes/me.png",
+      "alt": "Pequena foto do Vini Siqueira"
     },
-    "integration-gshop": {
-      "thumb-url": "/images/thumbnail-integration-gshop.png",
-      "thumb-alt": "A imagem de capa do projeto Integração do GShop",
-      "thumb-type": "contain",
-      "title": "Integração - VTEX com GShop",
-      "area": "Loja de varejo",
-      "type": "Back-end Cron Job",
-      "link": "/project/integration-gshop",
-      "details": {
-        "name": "Integração VTEX com GShop",
-        "description": "Planeje e implemente uma solução para capturar SKUs do catálogo da VTEX todos os dias e integrar com o Google Shopping.",
-        "flags": ["Back-end", "Load Balance", "Queue", "Cron Job"],
-        "buttons": [],
-        "empty-buttons-message": "Como esta é uma implementação para uma empresa privada, não há exposição de código nem explicação das regras de negócio.",
-        "board": [
-          {
-            "label": "Função",
-            "value": "Arquiteto e desenvolvedor"
-          },
-          {
-            "label": "Cliente",
-            "value": "Cliente de varejo"
-          },
-          {
-            "label": "Entrega",
-            "value": "Script back-end"
-          },
-          {
-            "label": "Tempo",
-            "value": "4 meses"
-          }
-        ],
-        "first-banner-area": [
-          "/projects/integration-gshop/mid-banner-01.1.png",
-          "/projects/integration-gshop/mid-banner-01.2.png"
-        ],
-        "emphasized-sentence": "Responsável por economizar muito dinheiro, esse script entrega resultados que maximizam o lucro da empresa.",
-        "second-banner-area": [],
-        "third-banner-area": [],
-        "content": [
-          [
-            {
-              "type": "title",
-              "data": "Diagrama estrutural simples"
-            },
-            {
-              "type": "description",
-              "data": "Neste diagrama estrutural simples, podemos ver diretamente as principais entidades da solução. Podemos ver 2 servidores backend (Service e Crawler), VTEX como um cliente externo e Radis & Postgres como Data Storage/Cache Management."
-            },
-            {
-              "type": "images",
-              "data": [
-                {
-                  "title": "",
-                  "url-light": "/projects/integration-gshop/diagram-01-light.svg",
-                  "url-dark": "/projects/integration-gshop/diagram-01-dark.svg",
-                  "alt": "Diagrama do projeto de integração do Google Shopping"
-                }
-              ]
-            }
-          ],
-          [
-            {
-              "type": "title",
-              "data": "Diagrama de system design"
-            },
-            {
-              "type": "description",
-              "data": "Este diagrama ilustra a arquitetura proposta para a solução. Embora alguns componentes já estejam implementados, outros estão em fase de planejamento e devem ser implementados no futuro.\n\nInicialmente, o fluxo será orquestrado por um script de inicialização. Em sua versão atual, esse script se comunica diretamente com o servidor para obter os dados iniciais necessários. No entanto, uma fila será então utilizada para processar de forma eficiente um grande volume de requisições que serão feitas.\n\nEssas requisições serão direcionadas a um balanceador de carga, responsável por distribuir o tráfego de entrada entre os servidores, otimizando o processamento. Cada servidor, que compartilha a mesma implementação, terá como principais responsabilidades estabelecer comunicação com sistemas externos (VTEX), acessar o banco de dados e registrar logs e métricas de monitoramento de cada execução."
-            },
-            {
-              "type": "images",
-              "data": [
-                {
-                  "title": "",
-                  "url-light": "/projects/integration-gshop/diagram-02-light.svg",
-                  "url-dark": "/projects/integration-gshop/diagram-02-dark.svg",
-                  "alt": "Diagrama do projeto de integração do Google Shopping"
-                }
-              ]
-            }
-          ],
-          [
-            {
-              "type": "title",
-              "data": "Diagrama de sequência detalhado"
-            },
-            {
-              "type": "description",
-              "data": "O diagrama de sequência abaixo se refere à primeira parte do fluxo, na comunicação entre os dois backends, ou seja, o serviço e o crawler. Aqui é realizada a busca por produtos e vendedores whitelabel que existem na VTEX. Os vendedores são salvos no banco de dados e os produtos são retornados na API.\n\nApós realizar essa busca inicial, a fila é utilizada. Esse retorno inicial traz consigo a lista de IDs de produtos divididos em grupos, ou seja, um array de strings. E cada grupo deste (array de strings) é adicionado à fila MGT_PRODUCTS."
-            },
-            {
-              "type": "images",
-              "data": [
-                {
-                  "title": "Initial flow",
-                  "url-light": "/projects/integration-gshop/diagram-03-light.svg",
-                  "url-dark": "/projects/integration-gshop/diagram-03-dark.svg",
-                  "alt": "Diagrama do projeto de integração do Google Shopping"
-                }
-              ]
-            },
-            {
-              "type": "description",
-              "data": "Abaixo está o diagrama de sequência para processamento da fila MGT_PRODUCT. Podemos ver que há um loop logo no início, no argumento recebido, para, para cada produto, buscar seus detalhes (mais informações) e adicionar um job a outra fila, chamada XML_PRODUCT.\n\nTambém podemos ver que, após finalizar o loop, há uma adição de u. job na fila MGT_AVAILABILITIES."
-            },
-            {
-              "type": "images",
-              "data": [
-                {
-                  "title": "MGT_PRODUCTS | Props: list of string (product id)",
-                  "url-light": "/projects/integration-gshop/diagram-04-light.svg",
-                  "url-dark": "/projects/integration-gshop/diagram-04-dark.svg",
-                  "alt": "Diagrama do projeto de integração do Google Shopping"
-                }
-              ]
-            },
-            {
-              "type": "description",
-              "data": "Na fila, cujo nome é MGT_AVAILABILITIES, há uma implementação que busca a disponibilidade dos produtos recebidos. Lembre-se: aqui é recebido um array de produtos, e aqui é verificada a disponibilidade, usando a API de simulação da VTEX.\n\nApós a busca pela disponibilidade de todos os produtos, é realizado um loop por essa lista de disponibilidades para adicionar um job para cada disponibilidade em outra fila, chamada XML_AVAILABILITY."
-            },
-            {
-              "type": "images",
-              "data": [
-                {
-                  "title": "MGT_AVAILABILITIES | Props: list of string (product id)",
-                  "url-light": "/projects/integration-gshop/diagram-05-light.svg",
-                  "url-dark": "/projects/integration-gshop/diagram-05-dark.svg",
-                  "alt": "Diagrama do projeto de integração do Google Shopping"
-                }
-              ]
-            },
-            {
-              "type": "description",
-              "data": "E finalmente, as duas últimas filas a serem descritas. Uma (a da esquerda) é a fila XML_PRODUCT, a outra (da direita) é a fila XML_AVAILABILITY. Ambas têm uma função muito similar: receber conteúdo e gravá-lo em um arquivo XML, com a primeira recebendo as informações do produto, e a segunda recebendo a disponibilidade de um produto."
-            },
-            {
-              "type": "images",
-              "data": [
-                {
-                  "title": "XML_PRODUCT | Props: details of product",
-                  "url-light": "/projects/integration-gshop/diagram-06-light.svg",
-                  "url-dark": "/projects/integration-gshop/diagram-06-dark.svg",
-                  "alt": "Diagrama do projeto de integração do Google Shopping"
-                },
-                {
-                  "title": "XML_AVAILABILITY | Props: availability data",
-                  "url-light": "/projects/integration-gshop/diagram-07-light.svg",
-                  "url-dark": "/projects/integration-gshop/diagram-07-dark.svg",
-                  "alt": "Diagrama do projeto de integração do Google Shopping"
-                }
-              ]
-            }
-          ]
-        ],
-        "prototype": {}
-      }
-    },
-    "rave-redesign": {
-      "thumb-url": "/images/thumbnail-rave-redesign.png",
-      "thumb-alt": "A imagem de capa do projeto Redesign Rave",
-      "thumb-type": "cover",
-      "title": "Redesign do Rave",
-      "area": "App de watch party",
-      "type": "Figma redesign",
-      "link": "/project/rave-redesign",
-      "details": {
-        "name": "Redesign do Rave",
-        "description": "Redesenho de um aplicativo de watch party, para assistir a conteúdo de diferentes plataformas, como Netflix, YouTube e Drive.",
-        "flags": ["Figma", "Redesign", "App Mobile"],
-        "buttons": [
-          {
-            "label": "Ver figma",
-            "link": "https://www.figma.com/design/sbxfREsJZqCq4l4qX5X2rh/Rave?node-id=13-1229&t=hHt4dBonqRPJPK9B-1"
-          }
-        ],
-        "empty-buttons-message": "Como esta é uma implementação para uma empresa privada, não haverá exposição do código nem explicação das regras de negócio.",
-        "board": [
-          {
-            "label": "Função",
-            "value": "Designer"
-          },
-          {
-            "label": "Cliente",
-            "value": "Eu (pessoal)"
-          },
-          {
-            "label": "Entrega",
-            "value": "Projeto no figma"
-          },
-          {
-            "label": "Tempo",
-            "value": "1 mês"
-          }
-        ],
-        "first-banner-area": ["/projects/redesign-rave/full-banner-01.png"],
-        "emphasized-sentence": "O redesenho do Rave eleva a experiência virtual, criando memórias e transformando desejo em conexão.",
-        "second-banner-area": [
-          "/projects/redesign-rave/mid-banner-02.1.png",
-          "/projects/redesign-rave/mid-banner-02.2.png"
-        ],
-        "third-banner-area": ["/projects/redesign-rave/full-banner-03.png"],
-        "content": [
-          [
-            {
-              "type": "title",
-              "data": "Navegação na tela"
-            },
-            {
-              "type": "description",
-              "data": "Pensando não só em atualizar a tela, mas também em adicionar novas funcionalidades que agregassem valor, foram projetados os seguintes módulos: Home, Perfil, Mensagens Diretas, Notificações, Lista de Servidores, Criação de Novo Servidor e, o mais importante, a Sala de Servidores."
-            },
-            {
-              "type": "images",
-              "data": [
-                {
-                  "title": "",
-                  "url-light": "/projects/redesign-rave/diagram-01-light.svg",
-                  "url-dark": "/projects/redesign-rave/diagram-01-dark.svg",
-                  "alt": "Diagrama do projeto Redesign do Rave"
-                }
-              ]
-            }
-          ],
-          [
-            {
-              "type": "title",
-              "data": "Principais funcionalidades"
-            },
-            {
-              "type": "description",
-              "data": "Nós projetamos alguns recursos, alguns dos quais já existem no aplicativo, mas com usabilidade ruim, e outros que não estão realmente disponíveis dentro do aplicativo. Todos eles visam melhorar a interatividade entre os usuários e a experiência do usuário como um todo."
-            },
-            {
-              "type": "list",
-              "data": [
-                {
-                  "index": "1",
-                  "text": "Configuração de vídeo e servidor mais objetiva e simples"
-                },
-                {
-                  "index": "4",
-                  "text": "Visualizando informações sobre o servidor e o conteúdo que está sendo transmitido"
-                },
-                {
-                  "index": "2",
-                  "text": "Possibilidade de troca de mensagens diretas com os usuários"
-                },
-                {
-                  "index": "5",
-                  "text": "Possibilidade de seguir usuários"
-                },
-                {
-                  "index": "3",
-                  "text": "Adição de log de acesso mostrando a data, hora e dispositivo"
-                }
-              ]
-            }
-          ]
-        ],
-        "prototype": {
-          "title": "Protótipo de alta fidelidade",
-          "description": "Abaixo está uma prévia do protótipo de alta fidelidade construído no Figma. Lá você pode encontrar os protótipos para desktop e mobile, bem como algumas decisões de design e uma breve tokenização de cores.",
-          "image": "/projects/redesign-rave/prototypes-01.png",
-          "label": "Ver figma",
-          "link": "https://www.figma.com/design/sbxfREsJZqCq4l4qX5X2rh/Rave?node-id=13-1229&t=hHt4dBonqRPJPK9B-1"
-        }
+    "first-name": "Vini",
+    "last-name": "Siqueira",
+    "navbar": {
+      "home": {
+        "label": "Inicio",
+        "link": "/"
+      },
+      "portfolio": {
+        "label": "Portfólio",
+        "link": "/portfolio"
+      },
+      "about": {
+        "label": "Sobre",
+        "link": "/about"
+      },
+      "resume": {
+        "label": "Curriculo",
+        "link": "/files/resume-pt-br.pdf"
       }
     }
   },
-
-  "catchphrase-text": "Criando soluções digitais que\nimpulsionam e encantam os usuários.",
-
-  "portfolio-texts-title": "Meu portfólio. Meus trabalhos.",
-  "portfolio-texts-subtitle": "Aqui estão alguns dos meus projetos que demonstram expertise em diferentes áreas.",
-
-  "error-texts-title": "Ops! Página não encontrada!",
-  "error-texts-subtitle": "Mas não se preocupe! A solução para esse problema é conosco, e você só precisa escolher o que deseja:",
-  "error-buttons-01-label": "Voltar ao inicio",
-  "error-buttons-01-link": "/",
-  "error-buttons-02-label": "Ver portfólio",
-  "error-buttons-02-link": "/portfolio",
-
-  "about-presentation-image": "/images/me-02.png",
-  "about-presentation-texts-title": "Sobre quem é Vini",
-  "about-presentation-texts-subtitle": "Olá, sou Vini, um desenvolvedor full-stack\napaixonado por UI design e tecnologias.",
-  "about-certificates-texts-title": "Meus certificados",
-  "about-certificates-texts-subtitle": "Aqui estão alguns dos meus certificados. Lembre-se de que extraio muito conhecimento de\ndiferentes fontes, que agregam muitos resultados, mas não fornecem certificação.",
-  "about-certificates-01-label": "Ano de 2021",
-  "about-certificates-01-image": "/certificates/certificate-01.png",
-  "about-certificates-01-alt": "Primeiro certificado",
-  "about-certificates-01-link": "#",
-  "about-certificates-02-label": "Ano de 2022",
-  "about-certificates-02-image": "/certificates/certificate-02.png",
-  "about-certificates-02-alt": "Segundo certificado",
-  "about-certificates-02-link": "#",
-  "about-certificates-03-label": "",
-  "about-certificates-03-image": "/certificates/certificate-03.png",
-  "about-certificates-03-alt": "Terceiro certificado",
-  "about-certificates-03-link": "#",
-  "about-certificates-04-label": "Ano de 2023",
-  "about-certificates-04-image": "/certificates/certificate-04.png",
-  "about-certificates-04-alt": "Quarto certificado",
-  "about-certificates-04-link": "#",
-  "about-certificates-05-label": "Ano de 2024",
-  "about-certificates-05-image": "/certificates/certificate-05.png",
-  "about-certificates-05-alt": "Quinto certificado",
-  "about-certificates-05-link": "#",
-  "about-skills-texts-title": "Áreas de melhores habilidades",
-  "about-skills-texts-subtitle": "Entre outras que certamente não caberiam aqui",
-  "about-skills-table-01-title": "Front-end & design",
-  "about-skills-table-01-item-01": "ReactJS com Next.js",
-  "about-skills-table-01-item-02": "Javascript & Typescript",
-  "about-skills-table-01-item-03": "Tailwindcss",
-  "about-skills-table-01-item-04": "CSS & SASS",
-  "about-skills-table-01-item-05": "Figma",
-  "about-skills-table-01-item-06": "Conceitos de UI/UX",
-  "about-skills-table-02-title": "Back-end & lógica",
-  "about-skills-table-02-item-01": "NodeJS",
-  "about-skills-table-02-item-02": "Express & NestJS",
-  "about-skills-table-02-item-03": "RabbitMQ com Redis",
-  "about-skills-table-02-item-04": "MySQL & Mongo",
-  "about-skills-table-02-item-05": "Algoritmo & estrutura de dados",
-  "about-skills-table-02-item-06": "API Rest & GraphQL",
-  "about-skills-table-03-title": "Social & comportamental",
-  "about-skills-table-03-item-01": "Comunicação",
-  "about-skills-table-03-item-02": "Liderança técnica",
-  "about-skills-table-03-item-03": "Dedicação aos objetivos",
-  "about-skills-table-03-item-04": "Qualidade de entrega",
-  "about-skills-table-03-item-05": "Responsabilidade",
-  "about-skills-table-03-item-06": "Resiliência & amigável",
-  "about-personal-facts-image-url": "/images/me-03.png",
-  "about-personal-facts-image-alt": "Vini Siqueira palestrando em um evento pra comunidade",
-  "about-personal-facts-texts-title": "Alguns fatos pessoais sobre mim",
-  "about-personal-facts-texts-body": "Sou casado há 1 ano com uma mulher extraordinária, companheira fiel e mãe dos filhos que ainda teremos. Ela é minha prioridade, meu maior presente de Deus e parte essencial da minha trajetória. Compartilhamos fé, valores e o desejo de construir uma família sólida.\n\nSou cristão protestante e busco viver uma vida coerente com os princípios bíblicos. Identifico-me com a doutrina batista, por considerá-la fiel à interpretação das Escrituras. Minha fé guia minhas escolhas e representa a base sobre a qual construo minha vida.\n\nSou apaixonado por automóveis e sempre me encantei com o universo automobilístico. Aprecio o design, a engenharia e a história por trás de cada veículo. Embora não tenha conhecimento técnico aprofundado, admiro profundamente a evolução e inovação do setor.\n\nA música RAP exerce grande influência sobre mim, especialmente pelas mensagens autênticas e sociais que carrega. Tenho grande apreço por batalhas de freestyle, acompanhando de perto o cenário nacional. Valorizo a criatividade, técnica e expressão envolvidas.",
-  "about-portfolio-thumb-01-url": "/images/thumbnail-crypto-rsa.png",
-  "about-portfolio-thumb-01-alt": "Crypto RSA Thumbnail",
-  "about-portfolio-thumb-02-url": "/images/thumbnail-integration-gshop.png",
-  "about-portfolio-thumb-02-alt": "Integração GShop Thumbnail",
-  "about-portfolio-thumb-03-url": "/images/thumbnail-rave-redesign.png",
-  "about-portfolio-thumb-03-alt": "Redesign Rave Thumbnail",
-  "about-portfolio-texts-title": "Veja meu trabalho e experiência",
-  "about-portfolio-texts-subtitle": "Do UI/UX design à implementação de API, aqui compartilho meu\nconhecimento e habilidades em diferentes áreas.",
-  "about-portfolio-texts-button": "Ver portfólio",
-  "about-portfolio-texts-button-link": "/protfolio"
+  "footer": {
+    "contact": {
+      "title": "Vamos construir algo juntos",
+      "subtitle": "Quer conversar mais? Me mande uma mensagem abaixo. Estou ansioso para conversarmos.",
+      "form": {
+        "full-name": {
+          "label": "Nome completo",
+          "placeholder": "Nome completo",
+          "errors": {
+            "min-character": "Mínimo de 5 caracteres",
+            "max-character": "Máximo de 30 caracteres"
+          }
+        },
+        "company-name": {
+          "label": "Nome da empresa",
+          "placeholder": "Nome da empresa (opcional)",
+          "errors": {
+            "max-character": "Máximo de 100 caracteres"
+          }
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Email para contato",
+          "errors": {
+            "format": "Formato de email inválido"
+          }
+        },
+        "phone": {
+          "label": "Celular",
+          "placeholder": "Número para contato",
+          "errors": {
+            "format": "Formato do número inválido"
+          }
+        },
+        "subject": {
+          "label": "Assunto",
+          "placeholder": "Assunto",
+          "errors": {
+            "min-character": "Mínimo de 5 caracteres",
+            "max-character": "Máximo de 25 caracteres"
+          }
+        },
+        "message": {
+          "label": "Mensagem",
+          "placeholder": "Sua mensagem",
+          "errors": {
+            "min-character": "Mínimo de 5 caracteres",
+            "max-character": "Máximo de 250 caracteres"
+          }
+        },
+        "submit-button": {
+          "label": "Enviar mensagem"
+        }
+      }
+    },
+    "social": {
+      "title": "Me siga",
+      "links": {
+        "linkedin": {
+          "label": "LinkedIn",
+          "link": "https://www.linkedin.com/in/vinisiqueira00"
+        },
+        "github": {
+          "label": "GitHub",
+          "link": "https://github.com/vinisiqueira00"
+        },
+        "instagram": {
+          "label": "Instagram",
+          "link": "https://www.instagram.com/vinisiqueira00"
+        }
+      }
+    },
+    "copyright": "© 2025 Vinícius Siqueira. Todos os direitos reservados."
+  },
+  "portfolio-section": {
+    "thumbnails": {
+      "crypto-rsa": {
+        "source": "/images/thumbnail-crypto-rsa.png",
+        "alt": "Capa do projeto Crypto RSA"
+      },
+      "gshop-integration": {
+        "source": "/images/thumbnail-integration-gshop.png",
+        "alt": "Capa do projeto Integração com GShop"
+      },
+      "redesign-rave": {
+        "source": "/images/thumbnail-rave-redesign.png",
+        "alt": "Capa do projeto Redesign Rave"
+      }
+    },
+    "title": "Veja meu trabalho e experiência",
+    "subtitle": "Do UI/UX design à implementação de API, aqui compartilho meu\nconhecimento e habilidades em diferentes áreas.",
+    "button": {
+      "label": "Ver portfólio",
+      "link": "/portfolio"
+    }
+  },
+  "projects": {
+    "crypto-rsa": {
+      "slug": "crypto-rsa",
+      "thumbnail": {
+        "source": "/images/thumbnail-crypto-rsa.png",
+        "alt": "A imagem de capa do projeto Crypto RSA"
+      },
+      "area": "Criptografia",
+      "type": "Full-stack web",
+      "title": "Crypto RSA",
+      "description": "Um projeto completo, que trabalha com conceitos avançados, desde design até criptografia RSA.",
+      "flags": [
+        "Figma",
+        "NextJS",
+        "Tailwind",
+        "NodeJS",
+        "Express",
+        "Typescript"
+      ],
+      "warning": "",
+      "buttons": [
+        {
+          "label": "Ver projeto",
+          "link": "https://cryptorsa.vinisiqueira.com.br",
+          "isPrimary": true,
+          "target": "_blank"
+        },
+        {
+          "label": "Ver código",
+          "link": "https://github.com/vinisiqueira00/crypto-rsa-backend",
+          "isPrimary": false,
+          "target": "_blank"
+        }
+      ],
+      "board": [
+        {
+          "label": "Função",
+          "value": "Designer e desenvolvedor"
+        },
+        {
+          "label": "Cliente",
+          "value": "Professor (faculdade)"
+        },
+        {
+          "label": "Entrega",
+          "value": "plataforma Web"
+        },
+        {
+          "label": "Tempo",
+          "value": "2 meses"
+        }
+      ],
+      "first-banner-area": [
+        {
+          "source": "/projects/crypto-rsa/full-banner-01.png",
+          "alt": "#"
+        }
+      ],
+      "emphasized-sentence": "Crypto RSA é uma plataforma de criptografia rápida e otimizada que prioriza a segurança do algoritmo RSA personalizado.",
+      "second-banner-area": [
+        {
+          "source": "/projects/crypto-rsa/mid-banner-02.1.png",
+          "alt": "#"
+        },
+        {
+          "source": "/projects/crypto-rsa/mid-banner-02.2.png",
+          "alt": "#"
+        }
+      ],
+      "content": [
+        [
+          {
+            "type": "title",
+            "data": "Navegação na tela"
+          },
+          {
+            "type": "description",
+            "data": "Por ser uma aplicação cujo foco era justamente ser bem simples e fácil de usar, optamos por implementar apenas 3 páginas, onde todas as páginas acessam todas as páginas."
+          },
+          {
+            "type": "images",
+            "data": [
+              {
+                "title": "",
+                "source-light": "/projects/crypto-rsa/diagram-01-light.svg",
+                "source-dark": "/projects/crypto-rsa/diagram-01-dark.svg",
+                "alt": "Diagrama do projeto Crypto RSA"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "type": "title",
+            "data": "Fluxo de solicitação"
+          },
+          {
+            "type": "description",
+            "data": "Para ser objetivo, haverá apenas 3 endpoints implementados na API REST, e cada um será atendido por uma das páginas."
+          },
+          {
+            "type": "images",
+            "data": [
+              {
+                "title": "",
+                "source-light": "/projects/crypto-rsa/diagram-02-light.svg",
+                "source-dark": "/projects/crypto-rsa/diagram-02-dark.svg",
+                "alt": "Diagrama do projeto Crypto RSA"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "type": "title",
+            "data": "Meta de entrega"
+          },
+          {
+            "type": "description",
+            "data": "Uma plataforma web capaz de criptografar e descriptografar o conteúdo de um arquivo txt, cuja criptografia RSA é personalizada, ou seja, sem usar uma biblioteca externa. Deve entregar uma interface que tenha uma abordagem simples e seja atrativa."
+          },
+          {
+            "type": "list",
+            "data": [
+              {
+                "icon": "1",
+                "text": "O remetente deve inserir um arquivo TXT com a mensagem"
+              },
+              {
+                "icon": "4",
+                "text": "O destinatário deve inserir o arquivo TXT criptografado"
+              },
+              {
+                "icon": "2",
+                "text": "O remetente deve informar a chave RSA pública"
+              },
+              {
+                "icon": "5",
+                "text": "O destinatário deve informar a chave RSA privada"
+              },
+              {
+                "icon": "3",
+                "text": "O remetente receberá o arquivo TXT criptografado"
+              },
+              {
+                "icon": "6",
+                "text": "O destinatário receberá o arquivo TXT descriptografado"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "type": "prototype",
+            "data": {
+              "title": "Protótipo de alta fidelidade",
+              "description": "Abaixo está uma prévia do protótipo de alta fidelidade construído no Figma. Lá você pode encontrar os protótipos para desktop e mobile, bem como algumas decisões de design e uma breve tokenização de cores.",
+              "image": {
+                "source": "/projects/crypto-rsa/prototypes-01.png",
+                "alt": "Preview de protótipos do projeto Crypto RSA"
+              },
+              "button": {
+                "label": "Ver figma",
+                "link": "https://www.figma.com/design/rMwhr1u5ep9D6wj1INLQ5H/CryptoRSA?node-id=0-1&t=mcgurmsOTpAuAz1I-1",
+                "isPrimary": false,
+                "target": "_blank"
+              }
+            }
+          }
+        ]
+      ],
+      "third-banner-area": [
+        {
+          "source": "/projects/crypto-rsa/full-banner-03.png",
+          "alt": "#"
+        }
+      ]
+    },
+    "gshop-integration": {
+      "slug": "gshop-integration",
+      "thumbnail": {
+        "source": "/images/thumbnail-integration-gshop.png",
+        "alt": "A imagem de capa do projeto Integração com GShop"
+      },
+      "area": "Loja de varejo",
+      "type": "Back-end Cron Job",
+      "title": "Integração - VTEX com GShop",
+      "description": "Planeje e implemente uma solução para capturar SKUs do catálogo da VTEX todos os dias e integrar com o Google Shopping.",
+      "flags": ["Back-end", "Load Balance", "Queue", "Cron Job"],
+      "warning": "Como esta é uma implementação para uma empresa privada, não há exposição de código nem explicação das regras de negócio.",
+      "buttons": [],
+      "board": [
+        {
+          "label": "Função",
+          "value": "Arquiteto e desenvolvedor"
+        },
+        {
+          "label": "Cliente",
+          "value": "Cliente de varejo"
+        },
+        {
+          "label": "Entrega",
+          "value": "Script back-end"
+        },
+        {
+          "label": "Tempo",
+          "value": "4 meses"
+        }
+      ],
+      "first-banner-area": [
+        {
+          "source": "/projects/integration-gshop/mid-banner-01.1.png",
+          "alt": "#"
+        },
+        {
+          "source": "/projects/integration-gshop/mid-banner-01.2.png",
+          "alt": "#"
+        }
+      ],
+      "emphasized-sentence": "Responsável por economizar muito dinheiro, esse script entrega resultados que maximizam o lucro da empresa.",
+      "second-banner-area": [],
+      "content": [
+        [
+          {
+            "type": "title",
+            "data": "Diagrama estrutural simples"
+          },
+          {
+            "type": "description",
+            "data": "Neste diagrama estrutural simples, podemos ver diretamente as principais entidades da solução. Podemos ver 2 servidores backend (Service e Crawler), VTEX como um cliente externo e Radis & Postgres como Data Storage/Cache Management."
+          },
+          {
+            "type": "images",
+            "data": [
+              {
+                "title": "",
+                "source-light": "/projects/integration-gshop/diagram-01-light.svg",
+                "source-dark": "/projects/integration-gshop/diagram-01-dark.svg",
+                "alt": "Diagrama do projeto de integração do Google Shopping"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "type": "title",
+            "data": "Diagrama de system design"
+          },
+          {
+            "type": "description",
+            "data": "Este diagrama ilustra a arquitetura proposta para a solução. Embora alguns componentes já estejam implementados, outros estão em fase de planejamento e devem ser implementados no futuro.\n\nInicialmente, o fluxo será orquestrado por um script de inicialização. Em sua versão atual, esse script se comunica diretamente com o servidor para obter os dados iniciais necessários. No entanto, uma fila será então utilizada para processar de forma eficiente um grande volume de requisições que serão feitas.\n\nEssas requisições serão direcionadas a um balanceador de carga, responsável por distribuir o tráfego de entrada entre os servidores, otimizando o processamento. Cada servidor, que compartilha a mesma implementação, terá como principais responsabilidades estabelecer comunicação com sistemas externos (VTEX), acessar o banco de dados e registrar logs e métricas de monitoramento de cada execução."
+          },
+          {
+            "type": "images",
+            "data": [
+              {
+                "title": "",
+                "source-light": "/projects/integration-gshop/diagram-02-light.svg",
+                "source-dark": "/projects/integration-gshop/diagram-02-dark.svg",
+                "alt": "Diagrama do projeto de integração do Google Shopping"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "type": "title",
+            "data": "Diagrama de sequência detalhado"
+          },
+          {
+            "type": "description",
+            "data": "O diagrama de sequência abaixo se refere à primeira parte do fluxo, na comunicação entre os dois backends, ou seja, o serviço e o crawler. Aqui é realizada a busca por produtos e vendedores whitelabel que existem na VTEX. Os vendedores são salvos no banco de dados e os produtos são retornados na API.\n\nApós realizar essa busca inicial, a fila é utilizada. Esse retorno inicial traz consigo a lista de IDs de produtos divididos em grupos, ou seja, um array de strings. E cada grupo deste (array de strings) é adicionado à fila MGT_PRODUCTS."
+          },
+          {
+            "type": "images",
+            "data": [
+              {
+                "title": "Fluxo inicial",
+                "source-light": "/projects/integration-gshop/diagram-03-light.svg",
+                "source-dark": "/projects/integration-gshop/diagram-03-dark.svg",
+                "alt": "Diagrama do projeto de integração do Google Shopping"
+              }
+            ]
+          },
+          {
+            "type": "description",
+            "data": "Abaixo está o diagrama de sequência para processamento da fila MGT_PRODUCT. Podemos ver que há um loop logo no início, no argumento recebido, para, para cada produto, buscar seus detalhes (mais informações) e adicionar um job a outra fila, chamada XML_PRODUCT.\n\nTambém podemos ver que, após finalizar o loop, há uma adição de u. job na fila MGT_AVAILABILITIES."
+          },
+          {
+            "type": "images",
+            "data": [
+              {
+                "title": "MGT_PRODUCTS - Lista de ID de produto",
+                "source-light": "/projects/integration-gshop/diagram-04-light.svg",
+                "source-dark": "/projects/integration-gshop/diagram-04-dark.svg",
+                "alt": "Diagrama do projeto de integração do Google Shopping"
+              }
+            ]
+          },
+          {
+            "type": "description",
+            "data": "Na fila, cujo nome é MGT_AVAILABILITIES, há uma implementação que busca a disponibilidade dos produtos recebidos. Lembre-se: aqui é recebido um array de produtos, e aqui é verificada a disponibilidade, usando a API de simulação da VTEX.\n\nApós a busca pela disponibilidade de todos os produtos, é realizado um loop por essa lista de disponibilidades para adicionar um job para cada disponibilidade em outra fila, chamada XML_AVAILABILITY."
+          },
+          {
+            "type": "images",
+            "data": [
+              {
+                "title": "MGT_AVAILABILITIES - Lista de ID de produto",
+                "source-light": "/projects/integration-gshop/diagram-05-light.svg",
+                "source-dark": "/projects/integration-gshop/diagram-05-dark.svg",
+                "alt": "Diagrama do projeto de integração do Google Shopping"
+              }
+            ]
+          },
+          {
+            "type": "description",
+            "data": "E finalmente, as duas últimas filas a serem descritas. Uma (a da esquerda) é a fila XML_PRODUCT, a outra (da direita) é a fila XML_AVAILABILITY. Ambas têm uma função muito similar: receber conteúdo e gravá-lo em um arquivo XML, com a primeira recebendo as informações do produto, e a segunda recebendo a disponibilidade de um produto."
+          },
+          {
+            "type": "images",
+            "data": [
+              {
+                "title": "XML_PRODUCT - Detalhes do produto",
+                "source-light": "/projects/integration-gshop/diagram-06-light.svg",
+                "source-dark": "/projects/integration-gshop/diagram-06-dark.svg",
+                "alt": "Diagrama do projeto de integração do Google Shopping"
+              },
+              {
+                "title": "XML_AVAILABILITY - Dados de disponibilidade",
+                "source-light": "/projects/integration-gshop/diagram-07-light.svg",
+                "source-dark": "/projects/integration-gshop/diagram-07-dark.svg",
+                "alt": "Diagrama do projeto de integração do Google Shopping"
+              }
+            ]
+          }
+        ]
+      ],
+      "third-banner-area": []
+    },
+    "redesign-rave": {
+      "slug": "redesign-rave",
+      "thumbnail": {
+        "source": "/images/thumbnail-rave-redesign.png",
+        "alt": "A imagem de capa do projeto Redesign Rave"
+      },
+      "area": "App de watch party",
+      "type": "Figma redesign",
+      "title": "Redesign do Rave",
+      "description": "Redesenho de um aplicativo de watch party, para assistir a conteúdo de diferentes plataformas, como Netflix, YouTube e Drive.",
+      "flags": ["Figma", "Redesign", "App Mobile"],
+      "warning": "Como esta é uma implementação para uma empresa privada, não haverá exposição do código nem explicação das regras de negócio.",
+      "buttons": [
+        {
+          "label": "Ver figma",
+          "link": "https://www.figma.com/design/sbxfREsJZqCq4l4qX5X2rh/Rave?node-id=13-1229&t=hHt4dBonqRPJPK9B-1",
+          "isPrimary": true,
+          "target": "_blank"
+        }
+      ],
+      "board": [
+        {
+          "label": "Função",
+          "value": "Designer"
+        },
+        {
+          "label": "Cliente",
+          "value": "Eu (pessoal)"
+        },
+        {
+          "label": "Entrega",
+          "value": "Projeto no figma"
+        },
+        {
+          "label": "Tempo",
+          "value": "1 mês"
+        }
+      ],
+      "first-banner-area": [
+        {
+          "source": "/projects/redesign-rave/full-banner-01.png",
+          "alt": "#"
+        }
+      ],
+      "emphasized-sentence": "O redesenho do Rave eleva a experiência virtual, criando memórias e transformando desejo em conexão.",
+      "second-banner-area": [
+        {
+          "source": "/projects/redesign-rave/mid-banner-02.1.png",
+          "alt": "#"
+        },
+        {
+          "source": "/projects/redesign-rave/mid-banner-02.2.png",
+          "alt": "#"
+        }
+      ],
+      "content": [
+        [
+          {
+            "type": "title",
+            "data": "Navegação na tela"
+          },
+          {
+            "type": "description",
+            "data": "Pensando não só em atualizar a tela, mas também em adicionar novas funcionalidades que agregassem valor, foram projetados os seguintes módulos: Home, Perfil, Mensagens Diretas, Notificações, Lista de Servidores, Criação de Novo Servidor e, o mais importante, a Sala de Servidores."
+          },
+          {
+            "type": "images",
+            "data": [
+              {
+                "title": "",
+                "source-light": "/projects/redesign-rave/diagram-01-light.svg",
+                "source-dark": "/projects/redesign-rave/diagram-01-dark.svg",
+                "alt": "Diagrama do projeto Redesign do Rave"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "type": "title",
+            "data": "Principais funcionalidades"
+          },
+          {
+            "type": "description",
+            "data": "Nós projetamos alguns recursos, alguns dos quais já existem no aplicativo, mas com usabilidade ruim, e outros que não estão realmente disponíveis dentro do aplicativo. Todos eles visam melhorar a interatividade entre os usuários e a experiência do usuário como um todo."
+          },
+          {
+            "type": "list",
+            "data": [
+              {
+                "icon": "1",
+                "text": "Configuração de vídeo e servidor mais objetiva e simples"
+              },
+              {
+                "icon": "4",
+                "text": "Visualizando informações sobre o servidor e o conteúdo que está sendo transmitido"
+              },
+              {
+                "icon": "2",
+                "text": "Possibilidade de troca de mensagens diretas com os usuários"
+              },
+              {
+                "icon": "5",
+                "text": "Possibilidade de seguir usuários"
+              },
+              {
+                "icon": "3",
+                "text": "Adição de log de acesso mostrando a data, hora e dispositivo"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "type": "prototype",
+            "data": {
+              "title": "Protótipo de alta fidelidade",
+              "description": "Abaixo está uma prévia do protótipo de alta fidelidade construído no Figma. Lá você pode encontrar os protótipos para desktop e mobile, bem como algumas decisões de design e uma breve tokenização de cores.",
+              "image": {
+                "source": "/projects/redesign-rave/prototypes-01.png",
+                "alt": "Preview de protótipos do projeto Redesign Rave"
+              },
+              "button": {
+                "label": "Ver figma",
+                "link": "https://www.figma.com/design/sbxfREsJZqCq4l4qX5X2rh/Rave?node-id=13-1229&t=hHt4dBonqRPJPK9B-1",
+                "isPrimary": false,
+                "target": "_blank"
+              }
+            }
+          }
+        ]
+      ],
+      "third-banner-area": [
+        {
+          "source": "/projects/redesign-rave/full-banner-03.png",
+          "alt": "#"
+        }
+      ]
+    }
+  },
+  "home-page": {
+    "presentation": {
+      "image": {
+        "source": "/images/presentation.png",
+        "alt": "A picture of Vini Siqueira"
+      },
+      "title": "Criando soluções que\ntransformam negócios e\nentregam resultados tangíveis.",
+      "location": "São Paulo, Brasil",
+      "contact": "Disponivel para contato",
+      "occupation": {
+        "text": "Full-stack sênior na",
+        "link": {
+          "label": "Cadastra",
+          "link": "https://cadastra.com/"
+        }
+      },
+      "academy": {
+        "text": "Formado pelo",
+        "link": {
+          "label": "Cefet/RJ",
+          "link": "https://www.cefet-rj.br/"
+        }
+      },
+      "buttons": {
+        "contact": {
+          "label": "Entrar em contato",
+          "link": "#contact"
+        },
+        "portfolio": {
+          "label": "Ver portfólio",
+          "link": "/portfolio"
+        }
+      }
+    },
+    "portfolio-button": {
+      "label": "Ver portfólio",
+      "link": "/portfolio"
+    },
+    "catchphrase": "Criando soluções digitais que\nimpulsionam e encantam os usuários."
+  },
+  "portfolio-page": {
+    "title": "Meu portfólio. Meus trabalhos.",
+    "subtitle": "Aqui estão alguns dos meus projetos que demonstram expertise em diferentes áreas."
+  },
+  "error-page": {
+    "title": "Ops! Página não encontrada!",
+    "subtitle": "Mas não se preocupe! A solução para esse problema é conosco, e você só precisa escolher o que deseja:",
+    "buttons": {
+      "home": {
+        "label": "Voltar ao inicio",
+        "link": "/"
+      },
+      "portfolio": {
+        "label": "Ver portfólio",
+        "link": "/portfolio"
+      }
+    }
+  },
+  "about-page": {
+    "presentation": {
+      "image": {
+        "source": "/images/me-02.png",
+        "alt": "#"
+      },
+      "title": "Sobre quem é Vini",
+      "subtitle": "Olá, sou Vini, um desenvolvedor full-stack\napaixonado por UI design e tecnologias."
+    },
+    "certifications": {
+      "title": "Meus certificados",
+      "subtitle": "Aqui estão alguns dos meus certificados. Lembre-se de que extraio muito conhecimento de\ndiferentes fontes, que agregam muitos resultados, mas não fornecem certificação.",
+      "certificates": {
+        "sebrae-2021": {
+          "label": "Ano de 2021",
+          "link": "#",
+          "image": {
+            "source": "/certificates/certificate-01.png",
+            "alt": "Primeiro certificado"
+          }
+        },
+        "sebrae-2022": {
+          "label": "Ano de 2022",
+          "link": "#",
+          "image": {
+            "source": "/certificates/certificate-02.png",
+            "alt": "Segundo certificado"
+          }
+        },
+        "vtex-2022": {
+          "label": "",
+          "link": "#",
+          "image": {
+            "source": "/certificates/certificate-03.png",
+            "alt": "Terceiro certificado"
+          }
+        },
+        "bradesco-2023": {
+          "label": "",
+          "link": "#",
+          "image": {
+            "source": "/certificates/certificate-04.png",
+            "alt": "Quarto certificado"
+          }
+        },
+        "vtex-2024": {
+          "label": "",
+          "link": "#",
+          "image": {
+            "source": "/certificates/certificate-05.png",
+            "alt": "Quinto certificado"
+          }
+        }
+      }
+    },
+    "skills": {
+      "title": "Áreas de melhores habilidades",
+      "subtitle": "Entre outras que certamente não caberiam aqui",
+      "areas": {
+        "front-end": {
+          "title": "Front-end & design",
+          "list": [
+            "ReactJS com Next.js",
+            "Javascript & Typescript",
+            "Tailwindcss",
+            "CSS & SASS",
+            "Figma",
+            "Conceitos de UI/UX"
+          ]
+        },
+        "back-end": {
+          "title": "Back-end & lógica",
+          "list": [
+            "NodeJS",
+            "Express & NestJS",
+            "RabbitMQ com Redis",
+            "MySQL & Mongo",
+            "Algoritmo & estrutura de dados",
+            "API Rest & GraphQL"
+          ]
+        },
+        "behavioral": {
+          "title": "Social & comportamental",
+          "list": [
+            "Comunicação",
+            "Liderança técnica",
+            "Dedicação aos objetivos",
+            "Qualidade de entrega",
+            "Responsabilidade",
+            "Resiliência & amigável"
+          ]
+        }
+      }
+    },
+    "personal-facts": {
+      "image": {
+        "source": "/images/me-03.png",
+        "alt": "Vini Siqueira palestrando em um evento pra comunidade"
+      },
+      "title": "Alguns fatos pessoais sobre mim",
+      "text": "Sou casado há 1 ano com uma mulher extraordinária, companheira fiel e mãe dos filhos que ainda teremos. Ela é minha prioridade, meu maior presente de Deus e parte essencial da minha trajetória. Compartilhamos fé, valores e o desejo de construir uma família sólida.\n\nSou cristão protestante e busco viver uma vida coerente com os princípios bíblicos. Identifico-me com a doutrina batista, por considerá-la fiel à interpretação das Escrituras. Minha fé guia minhas escolhas e representa a base sobre a qual construo minha vida.\n\nSou apaixonado por automóveis e sempre me encantei com o universo automobilístico. Aprecio o design, a engenharia e a história por trás de cada veículo. Embora não tenha conhecimento técnico aprofundado, admiro profundamente a evolução e inovação do setor.\n\nA música RAP exerce grande influência sobre mim, especialmente pelas mensagens autênticas e sociais que carrega. Tenho grande apreço por batalhas de freestyle, acompanhando de perto o cenário nacional. Valorizo a criatividade, técnica e expressão envolvidas."
+    }
+  }
 }

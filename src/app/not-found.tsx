@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/molecules/SectionHeader";
 import { Button } from "@/components/atoms/Button";
 
 export default function NotFoundPage() {
-  const t = useTranslations();
+  const t = useTranslations("error-page");
 
   return (
     <div>
@@ -18,20 +18,20 @@ export default function NotFoundPage() {
         </div>
 
         <SectionHeader
-          title={t("error-texts-title")}
-          subTitle={t("error-texts-subtitle")}
+          title={t("title")}
+          subTitle={t("subtitle")}
           titleTag="h3"
         />
 
         <div className="flex flex-col items-stretch justify-start gap-2 w-full md:w-auto md:flex-row md:justify-center md:gap-6">
           <Button
-            label={t("error-buttons-01-label")}
-            link={t("error-buttons-01-link")}
+            label={t("buttons.home.label")}
+            link={t("buttons.home.link")}
             type="primary"
           />
           <Button
-            label={t("error-buttons-02-label")}
-            link={t("error-buttons-02-link")}
+            label={t("buttons.portfolio.label")}
+            link={t("buttons.portfolio.link")}
             type="secondary"
           />
         </div>

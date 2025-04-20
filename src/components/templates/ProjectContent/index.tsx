@@ -4,33 +4,25 @@ import { ProjectThumbs } from "@/components/atoms/ProjectThumbs";
 import { ProjectData } from "@/components/organisms/ProjectData";
 
 interface ProjectContentProps {
-  thumbUrl: string;
-  thumbAlt: string;
-  thumbType: string;
-  name: string;
+  thumbnail: {
+    source: string;
+    alt: string;
+  };
+  title: string;
   area: string;
   type: string;
-  link: string;
+  slug: string;
 }
 
 function ProjectContent(props: ProjectContentProps) {
   return (
     <Link
-      href={props.link}
+      href={`/project/${props.slug}`}
       className="flex flex-col items-stretch justify-start gap-4 w-full h-auto"
     >
-      <ProjectThumbs
-        url={props.thumbUrl}
-        alt={props.thumbAlt}
-        type={props.thumbType}
-      />
+      <ProjectThumbs url={props.thumbnail.source} alt={props.thumbnail.alt} />
 
-      <ProjectData
-        name={props.name}
-        area={props.area}
-        type={props.type}
-        link={props.link}
-      />
+      <ProjectData name={props.title} area={props.area} type={props.type} />
     </Link>
   );
 }

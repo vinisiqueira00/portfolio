@@ -1,11 +1,16 @@
 import Image from "next/image";
 
-function ImagePresentationImage() {
+interface ImagePresentationImageProps {
+  src: string;
+  alt: string;
+}
+
+function ImagePresentationImage(props: ImagePresentationImageProps) {
   return (
     <Image
       className="block aspect-square rounded-2xl"
-      src="/images/presentation.png"
-      alt="A picture of Vini Siqueira"
+      src={props.src}
+      alt={props.alt}
       width={210}
       height={210}
     />

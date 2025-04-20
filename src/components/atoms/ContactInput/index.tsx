@@ -30,6 +30,8 @@ interface ContactInputTypeProps {
   type: "CONTACT";
   control?: Control<ContactFormData>;
   nameSelect: Path<ContactFormData>;
+  labelEmail: string;
+  labelPhone: string;
 }
 interface ContactInputOthersProps {
   type?: "TEXT" | "MESSAGE";
@@ -87,8 +89,8 @@ function ContactInput(props: ContactInputProps) {
                 <SelectValue placeholder="Contact" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="email">Email</SelectItem>
-                <SelectItem value="phone">Phone</SelectItem>
+                <SelectItem value="email">{props.labelEmail}</SelectItem>
+                <SelectItem value="phone">{props.labelPhone}</SelectItem>
               </SelectContent>
             </Select>
           )}

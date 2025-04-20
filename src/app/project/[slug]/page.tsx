@@ -3,7 +3,6 @@ import { ProjectDetailsHeading } from "@/components/organisms/ProjectDetailsHead
 import { ProjectDetailsBanners } from "@/components/molecules/ProjectDetailsBanners";
 import { ProjectDetailsSentenceWrapper } from "@/components/molecules/ProjectDetailsSentenceWrapper";
 import { ProjectDetailsContents } from "@/components/organisms/ProjectDetailsContents";
-import { ProjectDetailsPrototype } from "@/components/organisms/ProjectDetailsPrototype";
 
 interface ProjectProps {
   params: Promise<{ slug: string }>;
@@ -25,7 +24,7 @@ export default async function Project(props: ProjectProps) {
 
         <ProjectDetailsContents projectSlug={slug} />
 
-        <ProjectDetailsPrototype projectSlug={slug} />
+        {/* <ProjectDetailsPrototype projectSlug={slug} /> */}
 
         <ProjectDetailsBanners projectSlug={slug} sectionId="third" />
       </div>

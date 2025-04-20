@@ -7,20 +7,22 @@ interface ProjectDetailsBannersProps {
 }
 
 export function ProjectDetailsBanners(props: ProjectDetailsBannersProps) {
-  const t = useTranslations(`projects.${props.projectSlug}.details`);
+  const t = useTranslations(`projects.${props.projectSlug}`);
 
-  const banners: string[] = t.raw(`${props.sectionId}-banner-area`);
+  const banners: { source: string; alt: string }[] = t.raw(
+    `${props.sectionId}-banner-area`
+  );
 
   if (banners.length === 0) return <></>;
 
   return (
     <section className="flex items-center justify-center w-full h-auto">
       <div className="flex flex-col items-center justify-center gap-8 w-full h-auto md:flex-row">
-        {banners.map((bannerUrl) => (
+        {banners.map((banner) => (
           <ProjectDetailsBanner
-            key={bannerUrl}
-            bannerUrl={bannerUrl}
-            bannerAlt={`Banner of ${t("name")} project`}
+            key={banner.source}
+            bannerUrl={banner.source}
+            bannerAlt={banner.alt}
             isFull={banners.length === 1}
           />
         ))}

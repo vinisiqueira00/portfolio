@@ -9,9 +9,9 @@ interface ProjectDetailsContentProps {
 }
 
 export function ProjectDetailsContents(props: ProjectDetailsContentProps) {
-  const t = useTranslations(`projects.${props.projectSlug}.details`);
+  const t = useTranslations(`projects.${props.projectSlug}`);
 
-  const contentSubjects: IProjectDetailsContent[][] = t.raw("content");
+  const contentSubjects: IProjectDetailsContent[] = t.raw("content");
 
   if (contentSubjects.length === 0) return <></>;
 

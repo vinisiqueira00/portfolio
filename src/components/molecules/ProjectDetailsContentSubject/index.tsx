@@ -1,17 +1,18 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 import { ProjectDetailsContentSubjectDescription } from "@/components/atoms/ProjectDetailsContentSubjectDescription";
 import { ProjectDetailsContentSubjectImages } from "@/components/atoms/ProjectDetailsContentSubjectImages";
 import { ProjectDetailsContentSubjectList } from "@/components/atoms/ProjectDetailsContentSubjectList";
 import { ProjectDetailsContentSubjectTitle } from "@/components/atoms/ProjectDetailsContentSubjectTitle";
+import { ProjectDetailsContentSubjectPrototype } from "@/components/molecules/ProjectDetailsContentSubjectPrototype";
 
 import { IProjectDetailsContent } from "@/types/global";
-import { useEffect, useState } from "react";
 
 interface ProjectDetailsContentSubjectProps {
-  content: IProjectDetailsContent[];
+  content: IProjectDetailsContent;
 }
 
 export function ProjectDetailsContentSubject(
@@ -53,10 +54,10 @@ export function ProjectDetailsContentSubject(
               images={contentItem.data.map((image) => ({
                 title: image.title,
                 alt: image.alt,
-                url:
+                source:
                   resolvedTheme === "dark"
-                    ? image["url-dark"]
-                    : image["url-light"],
+                    ? image["source-dark"]
+                    : image["source-light"],
               }))}
             />
           );
@@ -67,6 +68,15 @@ export function ProjectDetailsContentSubject(
             <ProjectDetailsContentSubjectList
               key={idx}
               list={contentItem.data}
+            />
+          );
+        }
+
+        if (contentItem.type === "prototype") {
+          return (
+            <ProjectDetailsContentSubjectPrototype
+              key={idx}
+              data={contentItem.data}
             />
           );
         }

@@ -10,13 +10,13 @@ import { MenuLink } from "@/components/atoms/MenuLink";
 import { useNavbarStore } from "@/stores/NavbarStore";
 
 function MobileNavbar() {
-  const t = useTranslations();
+  const t = useTranslations("header.navbar");
 
   const { isOpened } = useNavbarStore();
 
   return (
     <AnimatePresence>
-      {isOpened ? (
+      {isOpened && (
         <motion.nav
           initial={{ height: 0 }}
           animate={{ height: "auto" }}
@@ -30,25 +30,13 @@ function MobileNavbar() {
           </div>
 
           <div className="flex flex-col items-stretch justify-start">
-            <MenuLink
-              href={t("navbar-item-01-link")}
-              label={t("navbar-item-01-label")}
-            />
-            <MenuLink
-              href={t("navbar-item-02-link")}
-              label={t("navbar-item-02-label")}
-            />
-            <MenuLink
-              href={t("navbar-item-03-link")}
-              label={t("navbar-item-03-label")}
-            />
-            <MenuLink
-              href={t("navbar-item-04-link")}
-              label={t("navbar-item-04-label")}
-            />
+            <MenuLink href={t("home.link")} label={t("home.label")} />
+            <MenuLink href={t("portfolio.link")} label={t("portfolio.label")} />
+            <MenuLink href={t("about.link")} label={t("about.label")} />
+            <MenuLink href={t("resume.link")} label={t("resume.label")} />
           </div>
         </motion.nav>
-      ) : null}
+      )}
     </AnimatePresence>
   );
 }

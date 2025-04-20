@@ -11,12 +11,12 @@ import { MobileNavbarTrigger } from "@/components/atoms/MobileNavbarTrigger";
 import { MobileNavbarOverlay } from "@/components/atoms/MobileNavbarOverlay";
 
 function Header() {
-  const t = useTranslations();
+  const t = useTranslations("header");
 
   function handleResumeClick() {
     const link = document.createElement("a");
-    link.href = t("navbar-item-04-link");
-    link.download = t("navbar-item-04-name");
+    link.href = t("navbar.resume.link");
+    link.download = "vini-siqueira-cv.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -28,25 +28,30 @@ function Header() {
         <div className="flex flex-col items-stretch justify-start gap-8 w-full px-6 py-4 md:py-6 rounded-2xl bg-light-neutral-000 dark:bg-dark-neutral-000">
           <div className="flex items-center justify-center w-full gap-4">
             <div className="flex flex-1 items-center justify-start">
-              <Logotype />
+              <Logotype
+                source={t("logotype.source")}
+                alt={t("logotype.alt")}
+                firstName={t("first-name")}
+                lastName={t("last-name")}
+              />
             </div>
 
             <div className="hidden flex-1 items-center justify-center gap-10 md:flex">
               <MenuLink
-                href={t("navbar-item-01-link")}
-                label={t("navbar-item-01-label")}
+                href={t("navbar.home.link")}
+                label={t("navbar.home.label")}
               />
               <MenuLink
-                href={t("navbar-item-02-link")}
-                label={t("navbar-item-02-label")}
+                href={t("navbar.portfolio.link")}
+                label={t("navbar.portfolio.label")}
               />
               <MenuLink
-                href={t("navbar-item-03-link")}
-                label={t("navbar-item-03-label")}
+                href={t("navbar.about.link")}
+                label={t("navbar.about.label")}
               />
               <MenuLink
                 onClick={handleResumeClick}
-                label={t("navbar-item-04-label")}
+                label={t("navbar.resume.label")}
               />
             </div>
 
